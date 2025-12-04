@@ -1,0 +1,1339 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+
+/* DEEP OCEAN - Professional teal & aquamarine */
+:root {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.03 180);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.62 0.22 185);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.58 0.2 170);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.66 0.24 195);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.15 0.03 180);
+  --input: oklch(0.15 0.03 180);
+  --ring: oklch(0.62 0.22 185);
+
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #14b8a6;
+  --altText: #e0e0e0;
+  --textDark: #5eaaa8;
+  --patternHexagon: #0d9488;
+  --serviceHover: rgba(20, 184, 166, 0.1);
+  --serviceDialog: #0e1a1a;
+  --buttons: #14b8a6;
+  --buttonHover: #5eaaa8;
+  --projectCard: rgba(26, 26, 26, 0.85);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+  --gradientPrimary: #5eaaa8;
+  --gradientSecondary: #14b8a6;
+  --gradientTertiary: #2dd4bf;
+  --serviceGradientStart: #0e1a1a;
+  --serviceGradientMid: #1e2a2a;
+  --serviceGradientEnd: #2e3a3a;
+  --cardLight: #ccfbf1;
+  --cardDark: #3e5e5c;
+  --footerTitle: #14b8a6;
+  --hexagonAlt: #2dd4bf;
+  --borderColor: rgba(20, 184, 166, 0.2);
+  --borderColorLight: rgba(20, 184, 166, 0.35);
+  --footerLinkText: #5eaaa8;
+  --techStackTitle: #0f766e;
+  --techStackIconColor: #14b8a6;
+  --techStackTextColor: #ccfbf1;
+  --particleBackground: rgba(8, 25, 25, 0.05);
+  --particleColor: 20, 184, 166;
+  --lineColor: 94, 170, 168;
+}
+
+/* purple theme */
+:root.purple-theme {
+  /* Updated theme for purple accent colors with dark mode */
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.02 280);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.6 0.3 200);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.5 0.25 160);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.65 0.35 190);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.15 0.02 280);
+  --input: oklch(0.15 0.02 280);
+  --ring: oklch(0.6 0.3 200);
+  --chart-1: oklch(0.6 0.3 200);
+  --chart-2: oklch(0.5 0.25 160);
+  --chart-3: oklch(0.7 0.2 120);
+  --chart-4: oklch(0.65 0.35 190);
+  --chart-5: oklch(0.55 0.28 175);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.12 0.02 280);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-primary: oklch(0.6 0.3 200);
+  --sidebar-primary-foreground: oklch(0.08 0 0);
+  --sidebar-accent: oklch(0.65 0.35 190);
+  --sidebar-accent-foreground: oklch(0.08 0 0);
+  --sidebar-border: oklch(0.15 0.02 280);
+  --sidebar-ring: oklch(0.6 0.3 200);
+
+  /* Custom theme colors for Techis-N - now using CSS variables */
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #8832cd;
+  --altText: #e0e0e0;
+  --textDark: #5d59af;
+  --patternHexagon: rgb(70, 65, 134);
+  --serviceHover: rgba(93, 89, 175, 0.1);
+  --serviceDialog: #1a1a2e;
+  --buttons: #8832cd;
+  --buttonHover: #5d59af;
+  --projectCard: rgba(26, 26, 26, 0.8);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+
+  /* Additional color variables for gradient and accent colors */
+  --gradientPrimary: #5d59af;
+  --gradientSecondary: #a072be;
+  --gradientTertiary: #be81b6;
+  --serviceGradientStart: #1a1a2e;
+  --serviceGradientMid: #2a2344;
+  --serviceGradientEnd: #3a2754;
+  --cardLight: #e4e4eb;
+  --cardDark: #543e63;
+  --footerTitle: #7571ce;
+  --hexagonAlt: #a375c2;
+  --borderColor: rgba(93, 89, 175, 0.2);
+  --borderColorLight: rgba(93, 89, 175, 0.3);
+  --footerLinkText: #5d59af;
+
+  /* Added tech stack colors */
+  --techStackTitle: #624177;
+  --techStackIconColor: #8832cd;
+  --techStackTextColor: #d4d4d8;
+
+  /* Canvas/particle animation colors */
+  --particleBackground: rgba(8, 20, 30, 0.05);
+  --particleColor: 136, 50, 205;
+  --lineColor: 93, 89, 175;
+
+  /* SVG and Icon colors */
+  --footerTextColor: white;
+  --footerSecondaryText: #9ca3af;
+}
+
+/* RED THEME - Fiery and bold */
+:root.red-theme {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.02 20);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.6 0.28 25);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.55 0.22 15);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.62 0.3 30);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.15 0.02 20);
+  --input: oklch(0.15 0.02 20);
+  --ring: oklch(0.6 0.28 25);
+  --chart-1: oklch(0.6 0.28 25);
+  --chart-2: oklch(0.55 0.22 15);
+  --chart-3: oklch(0.7 0.2 35);
+  --chart-4: oklch(0.62 0.3 30);
+  --chart-5: oklch(0.58 0.25 20);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.12 0.02 20);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-primary: oklch(0.6 0.28 25);
+  --sidebar-primary-foreground: oklch(0.08 0 0);
+  --sidebar-accent: oklch(0.62 0.3 30);
+  --sidebar-accent-foreground: oklch(0.08 0 0);
+  --sidebar-border: oklch(0.15 0.02 20);
+  --sidebar-ring: oklch(0.6 0.28 25);
+
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #e63946;
+  --altText: #e0e0e0;
+  --textDark: #c1666b;
+  --patternHexagon: #a4161a;
+  --serviceHover: rgba(230, 57, 70, 0.1);
+  --serviceDialog: #1a0e0e;
+  --buttons: #e63946;
+  --buttonHover: #c1666b;
+  --projectCard: rgba(26, 26, 26, 0.8);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+
+  --gradientPrimary: #c1666b;
+  --gradientSecondary: #d45d64;
+  --gradientTertiary: #e76f51;
+  --serviceGradientStart: #1a0e0e;
+  --serviceGradientMid: #2d1414;
+  --serviceGradientEnd: #3d1a1a;
+  --cardLight: #ebe4e4;
+  --cardDark: #6b3e3e;
+  --footerTitle: #d45d64;
+  --hexagonAlt: #e76f51;
+  --borderColor: rgba(230, 57, 70, 0.2);
+  --borderColorLight: rgba(230, 57, 70, 0.3);
+  --footerLinkText: #c1666b;
+
+  --techStackTitle: #9a4149;
+  --techStackIconColor: #e63946;
+  --techStackTextColor: #d4d4d8;
+
+  --particleBackground: rgba(30, 8, 8, 0.05);
+  --particleColor: 230, 57, 70;
+  --lineColor: 193, 102, 107;
+
+  --footerTextColor: white;
+  --footerSecondaryText: #9ca3af;
+}
+
+/* BLUE THEME - Cool and professional */
+:root.blue-theme {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.02 240);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.58 0.26 240);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.52 0.2 220);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.62 0.28 250);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.15 0.02 240);
+  --input: oklch(0.15 0.02 240);
+  --ring: oklch(0.58 0.26 240);
+  --chart-1: oklch(0.58 0.26 240);
+  --chart-2: oklch(0.52 0.2 220);
+  --chart-3: oklch(0.68 0.22 260);
+  --chart-4: oklch(0.62 0.28 250);
+  --chart-5: oklch(0.56 0.24 230);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.12 0.02 240);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-primary: oklch(0.58 0.26 240);
+  --sidebar-primary-foreground: oklch(0.08 0 0);
+  --sidebar-accent: oklch(0.62 0.28 250);
+  --sidebar-accent-foreground: oklch(0.08 0 0);
+  --sidebar-border: oklch(0.15 0.02 240);
+  --sidebar-ring: oklch(0.58 0.26 240);
+
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #3b82f6;
+  --altText: #e0e0e0;
+  --textDark: #5b8cc4;
+  --patternHexagon: #2563eb;
+  --serviceHover: rgba(59, 130, 246, 0.1);
+  --serviceDialog: #0e1a2e;
+  --buttons: #3b82f6;
+  --buttonHover: #5b8cc4;
+  --projectCard: rgba(26, 26, 26, 0.8);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+
+  --gradientPrimary: #5b8cc4;
+  --gradientSecondary: #60a5fa;
+  --gradientTertiary: #7dd3fc;
+  --serviceGradientStart: #0e1a2e;
+  --serviceGradientMid: #1e2a44;
+  --serviceGradientEnd: #2e3a54;
+  --cardLight: #e4e9f5;
+  --cardDark: #3e4f6b;
+  --footerTitle: #60a5fa;
+  --hexagonAlt: #7dd3fc;
+  --borderColor: rgba(59, 130, 246, 0.2);
+  --borderColorLight: rgba(59, 130, 246, 0.3);
+  --footerLinkText: #5b8cc4;
+
+  --techStackTitle: #4169a8;
+  --techStackIconColor: #3b82f6;
+  --techStackTextColor: #d4d4d8;
+
+  --particleBackground: rgba(8, 20, 30, 0.05);
+  --particleColor: 59, 130, 246;
+  --lineColor: 91, 140, 196;
+
+  --footerTextColor: white;
+  --footerSecondaryText: #9ca3af;
+}
+
+/* GREEN THEME - Fresh and energetic */
+:root.green-theme {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.02 150);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.62 0.24 155);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.56 0.2 170);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.65 0.26 140);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.15 0.02 150);
+  --input: oklch(0.15 0.02 150);
+  --ring: oklch(0.62 0.24 155);
+  --chart-1: oklch(0.62 0.24 155);
+  --chart-2: oklch(0.56 0.2 170);
+  --chart-3: oklch(0.7 0.22 135);
+  --chart-4: oklch(0.65 0.26 140);
+  --chart-5: oklch(0.6 0.22 160);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.12 0.02 150);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-primary: oklch(0.62 0.24 155);
+  --sidebar-primary-foreground: oklch(0.08 0 0);
+  --sidebar-accent: oklch(0.65 0.26 140);
+  --sidebar-accent-foreground: oklch(0.08 0 0);
+  --sidebar-border: oklch(0.15 0.02 150);
+  --sidebar-ring: oklch(0.62 0.24 155);
+
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #10b981;
+  --altText: #e0e0e0;
+  --textDark: #52a67d;
+  --patternHexagon: #059669;
+  --serviceHover: rgba(16, 185, 129, 0.1);
+  --serviceDialog: #0e1a16;
+  --buttons: #10b981;
+  --buttonHover: #52a67d;
+  --projectCard: rgba(26, 26, 26, 0.8);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+
+  --gradientPrimary: #52a67d;
+  --gradientSecondary: #34d399;
+  --gradientTertiary: #6ee7b7;
+  --serviceGradientStart: #0e1a16;
+  --serviceGradientMid: #1e2a24;
+  --serviceGradientEnd: #2e3a34;
+  --cardLight: #e4f5ee;
+  --cardDark: #3e6b54;
+  --footerTitle: #34d399;
+  --hexagonAlt: #6ee7b7;
+  --borderColor: rgba(16, 185, 129, 0.2);
+  --borderColorLight: rgba(16, 185, 129, 0.3);
+  --footerLinkText: #52a67d;
+
+  --techStackTitle: #41775e;
+  --techStackIconColor: #10b981;
+  --techStackTextColor: #d4d4d8;
+
+  --particleBackground: rgba(8, 30, 20, 0.05);
+  --particleColor: 16, 185, 129;
+  --lineColor: 82, 166, 125;
+
+  --footerTextColor: white;
+  --footerSecondaryText: #9ca3af;
+}
+/* CYBERPUNK NEON - Electric cyan & magenta fusion */
+:root.cyberpunk-theme {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.03 200);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.62 0.25 195);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.58 0.28 320);
+  --secondary-foreground: oklch(0.08 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.68 0.3 310);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.15 0.03 200);
+  --input: oklch(0.15 0.03 200);
+  --ring: oklch(0.62 0.25 195);
+
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #00b8d4;
+  --altText: #e0e0e0;
+  --textDark: #0097a7;
+  --patternHexagon: #00838f;
+  --serviceHover: rgba(0, 184, 212, 0.12);
+  --serviceDialog: #0e1a1f;
+  --buttons: #00b8d4;
+  --buttonHover: #e6458c;
+  --projectCard: rgba(26, 26, 26, 0.85);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+  --gradientPrimary: #0097a7;
+  --gradientSecondary: #00b8d4;
+  --gradientTertiary: #e6458c;
+  --serviceGradientStart: #0e1a1f;
+  --serviceGradientMid: #1a2530;
+  --serviceGradientEnd: #203040;
+  --cardLight: #d4f1ff;
+  --cardDark: #1a4d5c;
+  --footerTitle: #00b8d4;
+  --hexagonAlt: #e6458c;
+  --borderColor: rgba(0, 184, 212, 0.25);
+  --borderColorLight: rgba(0, 184, 212, 0.4);
+  --footerLinkText: #0097a7;
+  --techStackTitle: #00838f;
+  --techStackIconColor: #00b8d4;
+  --techStackTextColor: #c5e9f0;
+  --particleBackground: rgba(8, 25, 30, 0.05);
+  --particleColor: 0, 184, 212;
+  --lineColor: 230, 69, 140;
+}
+
+:root.cyber-neon-theme {
+  --background: oklch(0.05 0.0 0);
+  --foreground: oklch(0.98 0.0 0);
+  --card: oklch(0.10 0.08 260);
+  --card-foreground: oklch(0.98 0.0 0);
+  --popover: oklch(0.07 0.05 260);
+  --popover-foreground: oklch(0.98 0.0 0);
+  --primary: oklch(0.85 0.22 130); /* Electric Cyan */
+  --primary-foreground: oklch(0.05 0.0 0);
+  --secondary: oklch(0.15 0.10 280); /* Deep Purple */
+  --secondary-foreground: oklch(0.98 0.0 0);
+  --muted: oklch(0.12 0.06 260);
+  --muted-foreground: oklch(0.70 0.0 0);
+  --accent: oklch(0.80 0.25 100); /* Neon Pink */
+  --accent-foreground: oklch(0.05 0.0 0);
+  --destructive: oklch(0.75 0.30 20);
+  --border: oklch(0.20 0.12 260);
+  --input: oklch(0.20 0.12 260);
+  --ring: oklch(0.85 0.22 130);
+  --chart-1: oklch(0.85 0.22 130);
+  --chart-2: oklch(0.80 0.25 100);
+  --chart-3: oklch(0.75 0.20 280);
+  --chart-4: oklch(0.70 0.18 160);
+  --chart-5: oklch(0.90 0.15 200);
+  --sidebar: oklch(0.08 0.07 260);
+  --sidebar-primary: oklch(0.85 0.22 130);
+  --sidebar-accent: oklch(0.80 0.25 100);
+
+  /* Custom Techis-N Colors - Cyber Neon Palette */
+  --navbarColor: #030514;
+  --background1: #050823;
+  --background2: #0a0f2e;
+  --textHighlights: #00f5ff; /* Electric Cyan */
+  --altText: #f0fdfd;
+  --textDark: #a855f7; /* Electric Purple */
+  --patternHexagon: #3730a3;
+  --serviceHover: rgba(0, 245, 255, 0.1);
+  --serviceDialog: #0f1028;
+  --buttons: #00f5ff;
+  --buttonHover: #a855f7; /* Shifts to purple on hover */
+  --projectCard: rgba(10, 15, 46, 0.9);
+  --footerColor: #030514;
+  --slidingMenu: rgba(3, 5, 20, 0.98);
+  --gradientPrimary: #00f5ff;
+  --gradientSecondary: #a855f7;
+  --gradientTertiary: #f472b6;
+  --serviceGradientStart: #0f1028;
+  --serviceGradientMid: #1e1b4b;
+  --serviceGradientEnd: #312e81;
+  --cardLight: #c7d2fe;
+  --cardDark: #1e1b4b;
+  --footerTitle: #a855f7;
+  --hexagonAlt: #00f5ff;
+  --borderColor: rgba(0, 245, 255, 0.3);
+  --borderColorLight: rgba(168, 85, 247, 0.5);
+  --footerLinkText: #60a5fa;
+  --techStackTitle: #1e40af;
+  --techStackIconColor: #00f5ff;
+  --particleColor: 0, 245, 255;
+  --lineColor: 168, 85, 247;
+}
+
+/* ROYAL GOLD - Luxury & premium sophistication */
+:root.gold-theme {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.02 60);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.75 0.18 80);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.68 0.15 70);
+  --secondary-foreground: oklch(0.08 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.72 0.2 85);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.15 0.02 60);
+  --input: oklch(0.15 0.02 60);
+  --ring: oklch(0.75 0.18 80);
+
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #fbbf24;
+  --altText: #e0e0e0;
+  --textDark: #d4a574;
+  --patternHexagon: #f59e0b;
+  --serviceHover: rgba(251, 191, 36, 0.1);
+  --serviceDialog: #1f1a0e;
+  --buttons: #fbbf24;
+  --buttonHover: #d4a574;
+  --projectCard: rgba(26, 26, 26, 0.85);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+  --gradientPrimary: #d4a574;
+  --gradientSecondary: #fbbf24;
+  --gradientTertiary: #fcd34d;
+  --serviceGradientStart: #1f1a0e;
+  --serviceGradientMid: #2f2514;
+  --serviceGradientEnd: #3f301a;
+  --cardLight: #fef3c7;
+  --cardDark: #6b5838;
+  --footerTitle: #fbbf24;
+  --hexagonAlt: #fcd34d;
+  --borderColor: rgba(251, 191, 36, 0.2);
+  --borderColorLight: rgba(251, 191, 36, 0.35);
+  --footerLinkText: #d4a574;
+  --techStackTitle: #92753f;
+  --techStackIconColor: #fbbf24;
+  --techStackTextColor: #fef3c7;
+  --particleBackground: rgba(30, 25, 8, 0.05);
+  --particleColor: 251, 191, 36;
+  --lineColor: 212, 165, 116;
+}
+
+
+:root.oceanic-theme {
+  --background: oklch(0.08 0.0 0);
+  --foreground: oklch(0.98 0.0 0);
+  --card: oklch(0.12 0.04 240);
+  --card-foreground: oklch(0.98 0.0 0);
+  --popover: oklch(0.09 0.0 0);
+  --popover-foreground: oklch(0.98 0.0 0);
+  --primary: oklch(0.65 0.20 240); /* Deep Ocean Blue */
+  --primary-foreground: oklch(0.98 0.0 0);
+  --secondary: oklch(0.20 0.03 240);
+  --secondary-foreground: oklch(0.98 0.0 0);
+  --muted: oklch(0.16 0.02 240);
+  --muted-foreground: oklch(0.65 0.0 0);
+  --accent: oklch(0.70 0.15 220); /* Lighter Sky Blue */
+  --accent-foreground: oklch(0.08 0.0 0);
+  --destructive: oklch(0.60 0.23 25);
+  --border: oklch(0.20 0.04 240);
+  --input: oklch(0.20 0.04 240);
+  --ring: oklch(0.65 0.20 240);
+  --chart-1: oklch(0.65 0.20 240);
+  --chart-2: oklch(0.60 0.18 230);
+  --chart-3: oklch(0.70 0.15 220);
+  --chart-4: oklch(0.55 0.16 250);
+  --chart-5: oklch(0.75 0.12 210);
+  --sidebar: oklch(0.10 0.03 240);
+  --sidebar-primary: oklch(0.65 0.20 240);
+  --sidebar-accent: oklch(0.70 0.15 220);
+
+  /* Custom Techis-N Colors - Oceanic Palette */
+  --navbarColor: #05080f;
+  --background1: #070b14;
+  --background2: #0e1628;
+  --textHighlights: #3b82f6; /* Bright Blue */
+  --altText: #f0f9ff;
+  --textDark: #1d4ed8;
+  --patternHexagon: #1e3a8a;
+  --serviceHover: rgba(59, 130, 246, 0.15);
+  --serviceDialog: #0f172a;
+  --buttons: #3b82f6;
+  --buttonHover: #1d4ed8;
+  --projectCard: rgba(14, 22, 40, 0.85);
+  --footerColor: #05080f;
+  --slidingMenu: rgba(5, 8, 15, 0.98);
+  --gradientPrimary: #1d4ed8;
+  --gradientSecondary: #3b82f6;
+  --gradientTertiary: #60a5fa;
+  --serviceGradientStart: #0f172a;
+  --serviceGradientMid: #1e293b;
+  --serviceGradientEnd: #334155;
+  --cardLight: #dbeafe;
+  --cardDark: #1e3a8a;
+  --footerTitle: #60a5fa;
+  --hexagonAlt: #1d4ed8;
+  --borderColor: rgba(59, 130, 246, 0.25);
+  --borderColorLight: rgba(59, 130, 246, 0.4);
+  --footerLinkText: #93c5fd;
+  --techStackTitle: #1e3a8a;
+  --techStackIconColor: #3b82f6;
+  --particleColor: 59, 130, 246;
+  --lineColor: 29, 78, 216;
+}
+
+/* SUNSET ORANGE - Warm, innovative & creative */
+:root.sunset-theme {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.02 40);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.68 0.24 45);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.64 0.26 30);
+  --secondary-foreground: oklch(0.08 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.7 0.28 50);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.15 0.02 40);
+  --input: oklch(0.15 0.02 40);
+  --ring: oklch(0.68 0.24 45);
+
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #f97316;
+  --altText: #e0e0e0;
+  --textDark: #ea8e5f;
+  --patternHexagon: #ea580c;
+  --serviceHover: rgba(249, 115, 22, 0.1);
+  --serviceDialog: #1f150e;
+  --buttons: #f97316;
+  --buttonHover: #ea8e5f;
+  --projectCard: rgba(26, 26, 26, 0.85);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+  --gradientPrimary: #ea8e5f;
+  --gradientSecondary: #f97316;
+  --gradientTertiary: #fb923c;
+  --serviceGradientStart: #1f150e;
+  --serviceGradientMid: #2f2014;
+  --serviceGradientEnd: #3f2a1a;
+  --cardLight: #ffedd5;
+  --cardDark: #6b4a3e;
+  --footerTitle: #f97316;
+  --hexagonAlt: #fb923c;
+  --borderColor: rgba(249, 115, 22, 0.2);
+  --borderColorLight: rgba(249, 115, 22, 0.35);
+  --footerLinkText: #ea8e5f;
+  --techStackTitle: #9a5b3f;
+  --techStackIconColor: #f97316;
+  --techStackTextColor: #ffedd5;
+  --particleBackground: rgba(30, 20, 8, 0.05);
+  --particleColor: 249, 115, 22;
+  --lineColor: 234, 142, 95;
+}
+
+
+/* ELECTRIC VIOLET - Modern, tech-forward aesthetic */
+:root.violet-theme {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.03 280);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.62 0.28 285);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.58 0.26 275);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.66 0.3 295);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.15 0.03 280);
+  --input: oklch(0.15 0.03 280);
+  --ring: oklch(0.62 0.28 285);
+
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #a855f7;
+  --altText: #e0e0e0;
+  --textDark: #9f7aea;
+  --patternHexagon: #7c3aed;
+  --serviceHover: rgba(168, 85, 247, 0.1);
+  --serviceDialog: #1a0e1f;
+  --buttons: #a855f7;
+  --buttonHover: #9f7aea;
+  --projectCard: rgba(26, 26, 26, 0.85);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+  --gradientPrimary: #9f7aea;
+  --gradientSecondary: #a855f7;
+  --gradientTertiary: #c084fc;
+  --serviceGradientStart: #1a0e1f;
+  --serviceGradientMid: #2a142f;
+  --serviceGradientEnd: #3a1a3f;
+  --cardLight: #f3e8ff;
+  --cardDark: #5b3e6b;
+  --footerTitle: #a855f7;
+  --hexagonAlt: #c084fc;
+  --borderColor: rgba(168, 85, 247, 0.2);
+  --borderColorLight: rgba(168, 85, 247, 0.35);
+  --footerLinkText: #9f7aea;
+  --techStackTitle: #6d3a9a;
+  --techStackIconColor: #a855f7;
+  --techStackTextColor: #f3e8ff;
+  --particleBackground: rgba(25, 8, 30, 0.05);
+  --particleColor: 168, 85, 247;
+  --lineColor: 159, 122, 234;
+}
+
+/* CRIMSON FIRE - Bold, powerful & confident */
+:root.crimson-theme {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.02 15);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.58 0.26 20);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.62 0.24 10);
+  --secondary-foreground: oklch(0.08 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.64 0.28 25);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.15 0.02 15);
+  --input: oklch(0.15 0.02 15);
+  --ring: oklch(0.58 0.26 20);
+
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #dc2626;
+  --altText: #e0e0e0;
+  --textDark: #dc6b6b;
+  --patternHexagon: #b91c1c;
+  --serviceHover: rgba(220, 38, 38, 0.1);
+  --serviceDialog: #1f0e0e;
+  --buttons: #dc2626;
+  --buttonHover: #dc6b6b;
+  --projectCard: rgba(26, 26, 26, 0.85);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+  --gradientPrimary: #dc6b6b;
+  --gradientSecondary: #dc2626;
+  --gradientTertiary: #ef4444;
+  --serviceGradientStart: #1f0e0e;
+  --serviceGradientMid: #2f1414;
+  --serviceGradientEnd: #3f1a1a;
+  --cardLight: #fee2e2;
+  --cardDark: #6b3e3e;
+  --footerTitle: #dc2626;
+  --hexagonAlt: #ef4444;
+  --borderColor: rgba(220, 38, 38, 0.2);
+  --borderColorLight: rgba(220, 38, 38, 0.35);
+  --footerLinkText: #dc6b6b;
+  --techStackTitle: #9a3f3f;
+  --techStackIconColor: #dc2626;
+  --techStackTextColor: #fee2e2;
+  --particleBackground: rgba(30, 8, 8, 0.05);
+  --particleColor: 220, 38, 38;
+  --lineColor: 220, 107, 107;
+}
+
+/* EMERALD TECH - Innovation meets nature */
+:root.emerald-theme {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.03 150);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.64 0.22 155);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.6 0.2 145);
+  --secondary-foreground: oklch(0.08 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.68 0.24 160);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.15 0.03 150);
+  --input: oklch(0.15 0.03 150);
+  --ring: oklch(0.64 0.22 155);
+
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #059669;
+  --altText: #e0e0e0;
+  --textDark: #47a382;
+  --patternHexagon: #047857;
+  --serviceHover: rgba(5, 150, 105, 0.1);
+  --serviceDialog: #0e1f1a;
+  --buttons: #059669;
+  --buttonHover: #47a382;
+  --projectCard: rgba(26, 26, 26, 0.85);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+  --gradientPrimary: #47a382;
+  --gradientSecondary: #059669;
+  --gradientTertiary: #10b981;
+  --serviceGradientStart: #0e1f1a;
+  --serviceGradientMid: #1e2f2a;
+  --serviceGradientEnd: #2e3f3a;
+  --cardLight: #d1fae5;
+  --cardDark: #3e6b54;
+  --footerTitle: #059669;
+  --hexagonAlt: #10b981;
+  --borderColor: rgba(5, 150, 105, 0.2);
+  --borderColorLight: rgba(5, 150, 105, 0.35);
+  --footerLinkText: #47a382;
+  --techStackTitle: #065f46;
+  --techStackIconColor: #059669;
+  --techStackTextColor: #d1fae5;
+  --particleBackground: rgba(8, 30, 25, 0.05);
+  --particleColor: 5, 150, 105;
+  --lineColor: 71, 163, 130;
+}
+
+/* SAPPHIRE BLUE - Trust, reliability & expertise */
+:root.sapphire-theme {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.03 235);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.58 0.24 240);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.54 0.22 230);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.62 0.26 250);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.15 0.03 235);
+  --input: oklch(0.15 0.03 235);
+  --ring: oklch(0.58 0.24 240);
+
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #2563eb;
+  --altText: #e0e0e0;
+  --textDark: #6486d4;
+  --patternHexagon: #1d4ed8;
+  --serviceHover: rgba(37, 99, 235, 0.1);
+  --serviceDialog: #0e1420;
+  --buttons: #2563eb;
+  --buttonHover: #6486d4;
+  --projectCard: rgba(26, 26, 26, 0.85);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+  --gradientPrimary: #6486d4;
+  --gradientSecondary: #2563eb;
+  --gradientTertiary: #3b82f6;
+  --serviceGradientStart: #0e1420;
+  --serviceGradientMid: #1e2430;
+  --serviceGradientEnd: #2e3440;
+  --cardLight: #dbeafe;
+  --cardDark: #3e4d6b;
+  --footerTitle: #2563eb;
+  --hexagonAlt: #3b82f6;
+  --borderColor: rgba(37, 99, 235, 0.2);
+  --borderColorLight: rgba(37, 99, 235, 0.35);
+  --footerLinkText: #6486d4;
+  --techStackTitle: #1e3a8a;
+  --techStackIconColor: #2563eb;
+  --techStackTextColor: #dbeafe;
+  --particleBackground: rgba(8, 20, 30, 0.05);
+  --particleColor: 37, 99, 235;
+  --lineColor: 100, 134, 212;
+}
+
+/* MIDNIGHT INDIGO - Mysterious & sophisticated */
+:root.indigo-theme {
+  --background: oklch(0.08 0 0);
+  --foreground: oklch(0.95 0 0);
+  --card: oklch(0.12 0.03 260);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.08 0 0);
+  --popover-foreground: oklch(0.95 0 0);
+  --primary: oklch(0.56 0.26 265);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.52 0.24 255);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.25 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.6 0.28 275);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.95 0 0);
+  --border: oklch(0.15 0.03 260);
+  --input: oklch(0.15 0.03 260);
+  --ring: oklch(0.56 0.26 265);
+
+  --navbarColor: #0a0a0a;
+  --background1: #0d0d0d;
+  --background2: #1a1a1a;
+  --textHighlights: #6366f1;
+  --altText: #e0e0e0;
+  --textDark: #818cf8;
+  --patternHexagon: #4f46e5;
+  --serviceHover: rgba(99, 102, 241, 0.1);
+  --serviceDialog: #0e0e1f;
+  --buttons: #6366f1;
+  --buttonHover: #818cf8;
+  --projectCard: rgba(26, 26, 26, 0.85);
+  --footerColor: #0a0a0a;
+  --slidingMenu: rgba(10, 10, 10, 0.98);
+  --gradientPrimary: #818cf8;
+  --gradientSecondary: #6366f1;
+  --gradientTertiary: #a5b4fc;
+  --serviceGradientStart: #0e0e1f;
+  --serviceGradientMid: #1e1e2f;
+  --serviceGradientEnd: #2e2e3f;
+  --cardLight: #e0e7ff;
+  --cardDark: #3e446b;
+  --footerTitle: #6366f1;
+  --hexagonAlt: #a5b4fc;
+  --borderColor: rgba(99, 102, 241, 0.2);
+  --borderColorLight: rgba(99, 102, 241, 0.35);
+  --footerLinkText: #818cf8;
+  --techStackTitle: #3730a3;
+  --techStackIconColor: #6366f1;
+  --techStackTextColor: #e0e7ff;
+  --particleBackground: rgba(8, 8, 30, 0.05);
+  --particleColor: 99, 102, 241;
+  --lineColor: 129, 140, 248;
+}
+
+/* ARCTIC LIGHT - Clean, modern & professional light theme */
+:root.arctic-theme {
+  /* Core shadcn variables - Light mode */
+  --background: oklch(0.99 0 0);
+  --foreground: oklch(0.12 0 0);
+  --card: oklch(0.97 0.01 240);
+  --card-foreground: oklch(0.12 0 0);
+  --popover: oklch(0.99 0 0);
+  --popover-foreground: oklch(0.12 0 0);
+  --primary: oklch(0.58 0.26 240);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.94 0.02 240);
+  --secondary-foreground: oklch(0.12 0 0);
+  --muted: oklch(0.94 0.01 240);
+  --muted-foreground: oklch(0.45 0 0);
+  --accent: oklch(0.92 0.03 240);
+  --accent-foreground: oklch(0.12 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.88 0.02 240);
+  --input: oklch(0.88 0.02 240);
+  --ring: oklch(0.58 0.26 240);
+  --chart-1: oklch(0.58 0.26 240);
+  --chart-2: oklch(0.52 0.2 220);
+  --chart-3: oklch(0.68 0.22 260);
+  --chart-4: oklch(0.62 0.28 250);
+  --chart-5: oklch(0.56 0.24 230);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.97 0.01 240);
+  --sidebar-foreground: oklch(0.12 0 0);
+  --sidebar-primary: oklch(0.58 0.26 240);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.92 0.03 240);
+  --sidebar-accent-foreground: oklch(0.12 0 0);
+  --sidebar-border: oklch(0.88 0.02 240);
+  --sidebar-ring: oklch(0.58 0.26 240);
+
+  /* Custom Techis-N Colors - Arctic Light Palette */
+  --navbarColor: #ffffff;
+  --background1: #fafbff;
+  --background2: #f0f5ff;
+  --textHighlights: #3b82f6;
+  --altText: #1e293b;
+  --textDark: #475569;
+  --patternHexagon: #60a5fa;
+  --serviceHover: rgba(59, 130, 246, 0.08);
+  --serviceDialog: #ffffff;
+  --buttons: #3b82f6;
+  --buttonHover: #2563eb;
+  --projectCard: rgba(255, 255, 255, 0.95);
+  --footerColor: #f8fafc;
+  --slidingMenu: rgba(255, 255, 255, 0.98);
+  
+  /* Gradient colors */
+  --gradientPrimary: #60a5fa;
+  --gradientSecondary: #3b82f6;
+  --gradientTertiary: #2563eb;
+  --serviceGradientStart: #ffffff;
+  --serviceGradientMid: #f0f5ff;
+  --serviceGradientEnd: #e0f2fe;
+  --cardLight: #ffffff;
+  --cardDark: #dbeafe;
+  --footerTitle: #3b82f6;
+  --hexagonAlt: #60a5fa;
+  --borderColor: rgba(59, 130, 246, 0.15);
+  --borderColorLight: rgba(59, 130, 246, 0.25);
+  --footerLinkText: #475569;
+  
+  /* Tech stack colors */
+  --techStackTitle: #1e40af;
+  --techStackIconColor: #3b82f6;
+  --techStackTextColor: #1e293b;
+  
+  /* Canvas/particle animation colors */
+  --particleBackground: rgba(59, 130, 246, 0.02);
+  --particleColor: 59, 130, 246;
+  --lineColor: 96, 165, 250;
+  
+  /* Text colors */
+  --footerTextColor: #1e293b;
+  --footerSecondaryText: #64748b;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom animations and styles for portfolio */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.hideService {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.showService {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.valuescontainer {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease-out;
+}
+
+.valuesanime {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.rightcard {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.6s ease-out;
+}
+
+.animeright {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideInRight 0.6s ease-out;
+}
+
+.leftcard {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.6s ease-out;
+}
+
+.corevalues {
+  opacity: 1;
+  transform: translateX(0);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.techStack {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+.showStack {
+  opacity: 1;
+}
+
+.clip-hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.glass {
+  background: var(--projectCard);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--borderColor);
+}
+
+/* About section specific styles */
+#aboutSection {
+  gap: .5rem;
+  color: var(--altText);
+}
+
+#aboutentry {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#aboutcontent {
+  text-align: center;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto 1rem;
+}
+
+.boxcards {
+  padding: 1.5rem 3rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.valuescontent {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.valuescontainer {
+  background: var(--projectCard);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--borderColor);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#content1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--textHighlights);
+}
+
+#content,
+#content2 {
+  text-align: justify;
+  line-height: 1.6;
+  color: var(--altText);
+}
+
+#svgcontent {
+  font-weight: 600;
+  color: var(--textHighlights);
+}
+
+
+#testimonycontainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--projectCard);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--borderColor);
+  border-radius: 0.75rem;
+  transition: all 0.6s ease-out;
+}
+
+.founders {
+  color: var(--textHighlights);
+}
+
+/* Container for hexagon patterns */
+.container5 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
