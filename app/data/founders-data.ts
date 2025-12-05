@@ -7,17 +7,16 @@ type Founder = {
 
 export const founders: Founder[] = [
   {
-    name: "John Doe",
-    role: "CEO & Co-Founder",
-    image: "/professional-ceo-portrait.png",
+    name: "Spencer Nyaenya",
+    role: "CPO & Co-Founder",
+    image: "/spencerimage.jpeg",
     description:
-      "With over 15 years of experience in technology leadership, John drives our vision of delivering innovative solutions that transform businesses.",
-  },
+      "Spencer drives our product strategy through a sharp technical and AI-driven perspective, ensuring every solution is scalable, user-focused, and aligned with our mission to transform businesses."},
   {
-    name: "Jane Smith",
+    name: "Isaac Ndungu",
     role: "CTO & Co-Founder",
-    image: "/professional-cto-portrait.png",
+    image: "/isaacImage.jpg",
     description:
-      "Jane brings deep technical expertise and a passion for emerging technologies, leading our engineering teams to build cutting-edge solutions.",
+      "Isaac brings deep technical expertise and an AI-first mindset, leading our engineering teams to deliver high-performance, secure, and cutting-edge solutions.",
   },
 ]

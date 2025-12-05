@@ -60,7 +60,7 @@ export default function RootLayout({
               className="w-full flex flex-col items-center justify-center gap-y-4 h-full p-5 lg:w-1/2"
               style={{ color: "var(--footerTextColor)" }}
             >
-              <h1>Email: Techisn@gmail.com</h1>
+               <h1>Email:<a href="mailto:techisn25@gmail.com"> techisn25@gmail.com</a></h1>
               <h2>Phone: +254 772 000 000</h2>
               <h3>Address: Nairobi, Kenya</h3>
               <div className="flex flex-row gap-3">

@@ -6,22 +6,21 @@ type Project = {
 
 export const projects: Project[] = [
   {
-    name: "E-Commerce Platform",
-    description:
-      "A fully-featured e-commerce solution with advanced inventory management, payment integration, and real-time analytics for a leading retail brand.",
-    image: "/ecommerce-platform-interface.png",
+    name: "Smart Fuel",
+    description:"Smart Fuel is an application that automates fuel station operations, improving sales tracking, inventory management, and mobile payments. It boosts efficiency, prevents losses, and enhances customer satisfaction through real-time monitoring and faster transactions.",
+    image: "/smartfuel.webp",
   },
   {
-    name: "Healthcare Management System",
+    name: "AfyaSphere",
     description:
-      "Comprehensive patient management system with appointment scheduling, electronic health records, and telemedicine capabilities.",
-    image: "/healthcare-management-dashboard.png",
+      "Designed and developed AfyaSphere, a digital health platform that helps users track symptoms, access verified health insights, and stay engaged with their well-being through AI-powered analysis and direct connections with healthcare providers.",
+    image: "/Afyasphere.png",
   },
   {
-    name: "AI-Powered Analytics Tool",
+    name: "Janny Enterprise",
     description:
-      "Machine learning platform that provides predictive insights and automated reporting for enterprise clients across multiple industries.",
-    image: "/ai-analytics-dashboard.png",
+      "Developed a modern website for Janny Enterprise, a printing and branding company known for quality custom apparel and promotional merchandise.",
+    image: "/janny_enterprise.png",
   },
   {
     name: "Mobile Banking App",

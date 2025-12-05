@@ -1163,7 +1163,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
@@ -1265,7 +1265,7 @@
 }
 
 .boxcards {
-  padding: 1.5rem 3rem;
+  padding: 0.6rem;
   border-radius: 0.5rem;
   font-size: 1.5rem;
   font-weight: 700;
@@ -1283,7 +1283,7 @@
   background: var(--projectCard);
   backdrop-filter: blur(10px);
   border: 1px solid var(--borderColor);
-  padding: 2rem;
+  padding: 0.8rem;
   border-radius: 0.75rem;
   display: flex;
   flex-direction: column;

@@ -15,6 +15,14 @@ export const services: Service[] = [
     p2: "Our approach involves understanding your unique challenges and opportunities, designing intuitive interfaces, and leveraging the latest technologies to create solutions that align with your goals. From ideation to deployment, we ensure a seamless development process, ongoing support, and the flexibility to scale as your business evolves.",
   },
   {
+  id: "Automation Services",
+  logo: "/automation1.jpg",
+  image: "/automation2.jpg",
+  p1: "Streamline your business processes with our automation services. We design and implement intelligent automation solutions that increase efficiency, reduce errors, and save time across your operations.",
+  p2: "Our approach combines process analysis, workflow optimization, and advanced automation tools to create scalable, reliable systems. From repetitive task automation to complex business process automation, we ensure smooth, consistent performance that enhances productivity and drives measurable results."
+},
+
+  {
     id: "AI Solutions",
     logo: "/artificial-intelligence-icon.png",
     image: "/ai-neural-network.png",

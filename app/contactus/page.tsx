@@ -24,6 +24,8 @@ export default function ContactPage() {
         setStatusMessage("Phone number is required.")
         return
       }
+      setStatusType('sending')
+      setStatusMessage('Sending Request...')
 
       const formdata = new FormData()
       formdata.append("companyname", companyname)
@@ -38,7 +40,14 @@ export default function ContactPage() {
       }
 
       // Simulate form submission (replace with actual API call)
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+      // await new Promise((resolve) => setTimeout(resolve, 1000))
+      const contactres=await fetch('/api/route',{
+        method:'POST',
+        body:formdata
+        })
+      const response=await contactres.json()
+      console.log('response...',response)
+      if (response.success===true){
 
       setStatusType("success")
       setStatusMessage("Thank you! Your request has been submitted.")
@@ -49,6 +58,10 @@ export default function ContactPage() {
       setChosenService("")
       setDescription("")
       setDocument(null)
+   }else{
+    setStatusMessage("Oops! Something went wrong. Please try again.")
+    setStatusType("error")
+   }
     } catch (e) {
       console.log("error from backend..", e)
       setStatusMessage("Oops! Something went wrong. Please try again.")
@@ -237,6 +250,8 @@ export default function ContactPage() {
                 className={`mt-4 p-3 rounded-md text-sm font-medium ${
                   statusType === "success"
                     ? "bg-green-900/30 text-green-400 border border-green-700"
+                    :statusType==="sending"
+                    ? "bg-yellow-900/30 text-yellow-400 border border-yellow-700"
                     : "bg-red-900/30 text-red-400 border border-red-700"
                 }`}
               >

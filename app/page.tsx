@@ -11,12 +11,14 @@ import { Typewriter } from "react-simple-typewriter"
 import { RiNextjsFill } from "react-icons/ri"
 import { FaReact } from "react-icons/fa6"
 import { SiTailwindcss } from "react-icons/si"
-import { SiTypescript } from "react-icons/si"
+import { SiTypescript,SiRender,SiZapier,SiN8N,SiKubernetes,SiPostgresql,SiVercel } from "react-icons/si"
 import { SiMongodb } from "react-icons/si"
 import { FaNodeJs } from "react-icons/fa6"
-import { FaPython } from "react-icons/fa"
+import { FaPython,FaDocker,FaAws } from "react-icons/fa"
 import { useRouter } from "next/navigation"
 import BackgroundEffects from "./components/background-effects"
+// import { TbBrand4Chan } from "react-icons/tb"; // hypothetical, if you have a custom icon
+import { MdOutlineGraphicEq } from "react-icons/md"; 
 
 const techs = [
   { name: "Python", icon: FaPython },
@@ -26,6 +28,18 @@ const techs = [
   { name: "React", icon: FaReact },
   { name: "Tailwind CSS", icon: SiTailwindcss },
   { name: "TypeScript", icon: SiTypescript },
+  { name: "AWS", icon: FaAws },
+  // { name: "Azure", icon: SiMicrosoftazure },
+  { name: "PostgreSQL", icon: SiPostgresql },
+  { name: "Render", icon: SiRender },
+  { name: "Vercel", icon: SiVercel },
+  { name: "Docker", icon: FaDocker },
+  { name: "Kubernetes", icon: SiKubernetes },
+  { name: "n8n", icon: SiN8N },
+  { name: "Zapier", icon: SiZapier },
+  // { name: "LangChain", icon: TbBrand4Chan },
+  { name: "LangGraph", icon: MdOutlineGraphicEq }
+  
 ]
 
 type Service = {
@@ -414,7 +428,7 @@ const Page = () => {
 
       {/* About Section */}
       <section id="aboutSection" className="min-h-screen flex flex-col w-full relative scrollbar-hide scroll-mt-[12vh]">
-        <span id="aboutentry" className="font-bold mt-10" style={{ color: "var(--textDark)" }}>
+        <span id="aboutentry" className="font-bold mt-10 text-[28px]" style={{ color: "var(--textDark)", fontFamily: "'Arial', sans-serif" }}>
           Committed to Client Satisfaction
         </span>
         <span id="aboutcontent">
@@ -427,8 +441,8 @@ const Page = () => {
           our core values
         </div>
         <br />
-        <br />
-        <div className="valuescontent grid lg:grid-cols-2 gap-3">
+
+        <div className="valuescontent grid lg:grid-cols-2 gap-3 py-3">
           <div className="valuescontainer" ref={addToRefs}>
             <span id="content1">
               <div
@@ -658,12 +672,12 @@ const Page = () => {
         </h2>
         <div className="relative w-full overflow-hidden">
           <div className="flex animate-scroll gap-12 whitespace-nowrap">
-            {[...techs, ...techs, ...techs].map(({ name, icon: Icon }, index) => (
+            {[...techs, ...techs, ...techs,...techs].map(({ name, icon: Icon }, index) => (
               <div
                 key={`${name}-${index}`}
                 className="techStack flex flex-col items-center justify-center gap-y-2 hover:scale-110 transition-transform duration-300 min-w-[120px]"
               >
-                <Icon className="w-16 h-16" style={{ color: "var(--techStackIconColor)" }} />
+                <Icon className="w-15 h-15" style={{ color: "var(--techStackIconColor)" }} />
                 <span className="text-sm" style={{ color: "var(--techStackTextColor)" }}>
                   {name}
                 </span>
