@@ -205,16 +205,16 @@ const Page = () => {
   const getColor = (i: number) => (i % 2 === 0 ? "var(--textHighlights)" : "var(--buttonHover)");
 
   return (
-    <>
+    <main>
       <BackgroundEffects />
 
       {/* Hero Section */}
       <section id="homePage" className="w-full h-[70vh] lg:h-[85vh] relative scroll-mt-[12vh] text-(--altText)">
         <div className="h-full flex flex-col lg:flex-row">
           <div className="flex flex-col gap-y-5 items-center justify-center w-full lg:w-2/3 h-full px-2">
-            <span className="text-lg lg:text-5xl font-bold text-center">
+            <h1 className="text-lg lg:text-5xl font-bold text-center">
               Drive Innovation with Expert Technology Solutions
-            </span>
+            </h1>
             <span className="text-md font-serif text-center">
               Expertly delivering solutions by{" "}
               <span className="font-bold" style={{ color: getColor(index) }}>
@@ -336,14 +336,29 @@ const Page = () => {
                 id="header"
                 className="w-full grid grid-rows-[auto,fit-content(100px)] grid-cols-2 gap-y-10 relative z-10"
               >
-                <div
+                {/* <div
                   className="rounded-full w-24 h-24 bg-cover bg-center shadow-lg"
                   style={{ backgroundImage: `url(${oneService.logo})` }}
-                ></div>
-                <div
+                ></div> */}
+                <img src={oneService.logo} alt={`Logo of ${oneService.id}`} className="rounded-full w-24 h-24 shadow-lg" />
+
+                {/* <div
                   className="min-h-full bg-cover bg-center rounded-md shadow-lg"
                   style={{ backgroundImage: hoveredServiceId === oneService.id ? `url(${oneService.image})` : "" }}
-                ></div>
+                ></div> */}
+
+                <div className="min-h-full rounded-md shadow-lg relative overflow-hidden">
+  {hoveredServiceId === oneService.id && (
+    <img
+      src={oneService.image}
+      alt={oneService.id || "Service Image"}
+      className="absolute inset-0 w-full h-full object-cover"
+      loading="lazy"
+    />
+  )}
+</div>
+
+
                 <span
                   className="h-fit col-span-2 text-2xl lg:text-3xl text-nowrap z-20 font-bold"
                   style={{ color: "var(--textHighlights)" }}
@@ -609,10 +624,14 @@ const Page = () => {
                   background: "var(--projectCard)",
                 }}
               >
-                <div
-                  className="h-48 w-full items-center flex justify-center bg-cover bg-center bg-no-repeat rounded-lg"
-                  style={{ backgroundImage: `url(${item.image})` }}
-                ></div>
+                <div className="h-48 w-full flex items-center justify-center rounded-lg overflow-hidden">
+  <img
+    src={item.image}
+    alt={item.name} // 
+    className="w-full h-full object-cover object-center"
+  />
+</div>
+
                 <span
                   className="mt-5 text-xl font-semibold align-center justify-center text-center"
                   style={{ color: "var(--textHighlights)" }}
@@ -785,7 +804,7 @@ const Page = () => {
           ))}
         </div>
       </div>
-    </>
+    </main>
   )
 }
 
