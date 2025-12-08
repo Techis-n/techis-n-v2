@@ -21,8 +21,23 @@ const geistMono = Geist_Mono({
 // Updated metadata
 export const metadata: Metadata = {
   title: "Techis-N | Expert Technology Solutions",
-  description:
-    "Drive Innovation with Expert Technology Solutions by Designing, Building, Testing, Improving, Automating, and Deploying",
+  description:"Techis-N delivers expert technology solutions—from AI and automation to cloud services, data analytics, software/ web development, social media management and digital marketing. We design, build, and deploy high-quality software that helps businesses grow and innovate.",
+  keywords: ["techis-N", "techisn", "techis", "techis n", "tech is n", "techis-n solutions", "techis-n technologies", "technology solutions", "software development company", "AI solutions", "automation solutions", "cloud solutions", "data analytics services", "IT consulting", "web development services", "app development company", "full-stack development", "DevOps services", "QA testing", "digital marketing services", "social media management", "business automation", "machine learning solutions", "cloud migration", "business intelligence solutions"],
+  openGraph:{
+    title: "Techis-N | Expert Technology Solutions",
+    description:"Techis-N delivers expert technology solutions—from AI and automation to cloud services, data analytics, software/ web development, social media management and digital marketing. We design, build, and deploy high-quality software that helps businesses grow and innovate.",
+    url:"https://techis-n.com",
+    siteName:"Techis-N",
+    // images:[
+    //   {
+    //     url:,
+    //     width:1200,
+    //     height:630
+    //   }
+    // ],
+  },
+
+
     generator: 'v0.app'
 }
 
@@ -61,11 +76,11 @@ export default function RootLayout({
               style={{ color: "var(--footerTextColor)" }}
             >
                <h1>Email:<a href="mailto:techisn25@gmail.com"> techisn25@gmail.com</a></h1>
-              <h2>Phone: +254 772 000 000</h2>
+              <h2>Phone: +254 111 700 990 / +254 7111 531 39</h2>
               <h3>Address: Nairobi, Kenya</h3>
               <div className="flex flex-row gap-3">
                 {/* WhatsApp */}
-                <a href="https://wa.me/254772000000" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/254 775 014655?text=Hello%20Techis-N!" target="_blank" rel="noopener noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 32 32" fill="none">
                     <path
                       fillRule="evenodd"
