@@ -348,15 +348,15 @@ const Page = () => {
                 ></div> */}
 
                 <div className="min-h-full rounded-md shadow-lg relative overflow-hidden">
-  {hoveredServiceId === oneService.id && (
-    <img
-      src={oneService.image}
-      alt={oneService.id || "Service Image"}
-      className="absolute inset-0 w-full h-full object-cover"
-      loading="lazy"
-    />
-  )}
+  <img
+    src={oneService.image}
+    alt={oneService.id || "Service Image"}
+    className="absolute inset-0 w-full h-full object-cover"
+    loading="lazy"
+  />
 </div>
+
+
 
 
                 <span
