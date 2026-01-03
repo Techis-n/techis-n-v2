@@ -66,8 +66,8 @@ export default function RootLayout({
               </h1>
               <p style={{ color: "var(--footerTextColor)" }}>When technology meets intention, it transforms.</p>
               <p style={{ color: "var(--footerSecondaryText)" }} className="text-justify">
-                At Techis-N, we don't just deliver — we deliver with purpose. From the first idea to the final result, we
-                work hand-in-hand with you to turn your vision into powerful, customized tech solutions.
+                At Techis-N, we don't just deliver — we deliver with purpose. From the first idea to <br></br> the final result, we
+                work hand-in-hand with you to turn your vision into powerful, <br></br>customized tech solutions.
               </p>
               <ContactusPagebtn />
             </div>
@@ -75,9 +75,12 @@ export default function RootLayout({
               className="w-full flex flex-col items-center justify-center gap-y-4 h-full p-5 lg:w-1/2"
               style={{ color: "var(--footerTextColor)" }}
             >
-               <h1>Email:<a href="mailto:techisn25@gmail.com"> techisn25@gmail.com</a></h1>
-              <h2>Phone: +254 111 700 990 / +254 7111 531 39</h2>
-              <h3>Address: Nairobi, Kenya</h3>
+              <div className="mt-5 p-5">
+               <h1>Email:<a href="mailto:techisn25@gmail.com" > techisn25@gmail.com</a></h1>
+                <h1>Phone: +254 111 700 990 / +254 7111 531 39</h1>
+               <h1>Address: Nairobi, Kenya</h1>
+
+              </div>
               <div className="flex flex-row gap-3">
                 {/* WhatsApp */}
                 <a href="https://wa.me/254 775 014655?text=Hello%20Techis-N!" target="_blank" rel="noopener noreferrer">

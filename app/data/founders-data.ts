@@ -8,15 +8,23 @@ type Founder = {
 export const founders: Founder[] = [
   {
     name: "Spencer Nyaenya",
-    role: "CPO & Co-Founder",
-    image: "/spencerimage.jpeg",
+    role: "Chief Executive Officer",
+    image: "/spencerimage.JPG",
     description:
-      "Spencer drives our product strategy through a sharp technical and AI-driven perspective, ensuring every solution is scalable, user-focused, and aligned with our mission to transform businesses."},
+      "Spencer leads the company’s vision and strategy, combining strong technical insight with an AI-driven mindset to guide product direction, ensure scalable solutions, and deliver long-term business impact."},
   {
     name: "Isaac Ndungu",
-    role: "CTO & Co-Founder",
-    image: "/isaacImage.jpg",
+    role: "Chief Technology Officer",
+    image: "/IsaacImage.jpg",
     description:
-      "Isaac brings deep technical expertise and an AI-first mindset, leading our engineering teams to deliver high-performance, secure, and cutting-edge solutions.",
+      "Isaac leads and oversees the company’s technology vision and execution with deep technical expertise and an AI-first mindset, guiding engineering teams to deliver secure, high-performance, and scalable solutions.",
   },
+  {
+    name: "Edgar Omari",
+    role: "Chief Branding Officer",
+    image: "edgarimage.jpg",
+    description:
+      "Edgar leads the company’s marketing strategy, leveraging data-driven insights and creative expertise to strengthen brand presence, expand reach, and drive sustainable growth.",
+  },
+  
 ]

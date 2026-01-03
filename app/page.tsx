@@ -20,6 +20,8 @@ import BackgroundEffects from "./components/background-effects"
 // import { TbBrand4Chan } from "react-icons/tb"; // hypothetical, if you have a custom icon
 import { MdOutlineGraphicEq } from "react-icons/md"; 
 
+import { FounderCard } from "./components/founders-card"
+
 const techs = [
   { name: "Python", icon: FaPython },
   { name: "Node.js", icon: FaNodeJs },
@@ -776,9 +778,41 @@ const Page = () => {
       
 
       {/* Founders Section */}
-      <div className="flex flex-col p-5 gap-5 bg-(--background1)">
-        <h2 className="founders text-3xl font-bold text-center mb-8" style={{ color: "var(--textHighlights)" }}>
-          Our Founders
+      <div className="flex flex-col  p-5 gap-5 bg-(--background1)">
+         <div className="max-w-7xl mx-auto">
+        {/* Header Section */}
+                <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16 space-y-4"
+        >
+          <h2 className="text-4xl md:text-5xl font-serif italic text-blue-200">Meet Our leadership Team</h2>
+          <p className="text-slate-400 text-lg">top people at  our organisation</p>
+        </motion.div>
+
+        {/* Founders Grid */} 
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={{
+            visible: {
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+          }}
+          className="flex flex-wrap  justify-center gap-8"
+        >
+          {founders.map((founder) => (
+            <FounderCard key={founder.name} {...founder} />
+          ))}
+        </motion.div>
+      </div>
+
+        {/* <h2 className="founders text-3xl font-bold text-center mb-8" style={{ color: "var(--textHighlights)" }}>
+          Meet Our leadership Team
         </h2>
         <div className="flex flex-wrap justify-center gap-5">
           {founders.map((oneFounder) => (
@@ -802,7 +836,7 @@ const Page = () => {
               <span className="max-w-[350px] text-justify text-gray-300">{oneFounder.description}</span>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </main>
   )
