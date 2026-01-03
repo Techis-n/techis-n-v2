@@ -29,10 +29,11 @@ export function FounderCard({ name, role, description, image }: FounderCardProps
           quality={90}
           width={300}
           height={500}
+          // //  style={{ height: "auto" }}
           priority
           unoptimized
-          className="object-cover transform-gpu"
-          // sizes="(max-width: 768px) 100vw, 300px"
+          className="object-cover h-auto w-full"
+          sizes="(max-width: 768px) 100vw, 300px"
         />
       </div>
 
