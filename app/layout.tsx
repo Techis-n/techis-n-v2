@@ -76,8 +76,8 @@ export default function RootLayout({
               style={{ color: "var(--footerTextColor)" }}
             >
               <div className="mt-5 p-5">
-               <h1>Email:<a href="mailto:techisn25@gmail.com" > techisn25@gmail.com</a></h1>
-                <h1>Phone: +254 111 700 990 / +254 7111 531 39</h1>
+               <h1>Email  :<a href="mailto:techisn25@gmail.com" className="text-blue-200  hover:text-blue-300 hover:underline ml-4" > techisn25@gmail.com</a></h1>
+               <h1>Phone  : +254 111 700 990 / +254 7111 531 39</h1>
                <h1>Address: Nairobi, Kenya</h1>
 
               </div>

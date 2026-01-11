@@ -18,22 +18,22 @@ export function FounderCard({ name, role, description, image }: FounderCardProps
         visible: { opacity: 1, y: 0 },
       }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="relative w-72 max-w-[300px] aspect-[3/4] rounded-3xl overflow-hidden group cursor-pointer bg-slate-900"
+      className="relative w-72 h-[400px] max-w-[400px] aspect-[3/4] rounded-3xl overflow-hidden group cursor-pointer bg-slate-900 "
     >
       {/* Background Image */}
-      <div className="absolute inset-0 transition-opacity duration-500 group-hover:opacity-20">
+      <div className="absolute items-center justify-center  inset-0 transition-opacity duration-500 group-hover:opacity-20">
         <Image
           src={image || "/placeholder.svg"}
           alt={name}
           // fill
-          quality={90}
-          width={300}
-          height={500}
+          quality={100}
+          width={400}
+          height={0}
           // //  style={{ height: "auto" }}
           priority
           unoptimized
           className="object-cover h-auto w-full"
-          sizes="(max-width: 768px) 100vw, 300px"
+          // sizes="(max-width: 768px) 100vw, 300px"
         />
       </div>
 

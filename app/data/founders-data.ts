@@ -9,20 +9,20 @@ export const founders: Founder[] = [
   {
     name: "Spencer Nyaenya",
     role: "Chief Executive Officer",
-    image: "/spencerimage.JPG",
+    image: "https://ferb5x75m6auvlfr.public.blob.vercel-storage.com/DSC_9963.JPG",
     description:
       "Spencer leads the company’s vision and strategy, combining strong technical insight with an AI-driven mindset to guide product direction, ensure scalable solutions, and deliver long-term business impact."},
   {
     name: "Isaac Ndungu",
     role: "Chief Technology Officer",
-    image: "/IsaacImage.jpg",
+    image: "https://ferb5x75m6auvlfr.public.blob.vercel-storage.com/Isaac%20Ndungu%20%281%29.jpg",
     description:
       "Isaac leads and oversees the company’s technology vision and execution with deep technical expertise and an AI-first mindset, guiding engineering teams to deliver secure, high-performance, and scalable solutions.",
   },
   {
     name: "Edgar Omari",
     role: "Chief Branding Officer",
-    image: "edgarimage.jpg",
+    image: "https://ferb5x75m6auvlfr.public.blob.vercel-storage.com/IMG_9252~2.jpg",
     description:
       "Edgar leads the company’s marketing strategy, leveraging data-driven insights and creative expertise to strengthen brand presence, expand reach, and drive sustainable growth.",
   },
