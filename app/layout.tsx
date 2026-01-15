@@ -5,7 +5,8 @@ import "./globals.css"
 import { PopupNav } from "./components/popup-nav"
 import ContactusPagebtn from "./components/contactus-page-btn"
 import { ThemeProvider } from "./context/ThemeContext"
-
+import { Mail, Phone, MapPin } from "lucide-react"
+import Link from 'next/link'
 
 // Font configuration
 const geistSans = Geist({
@@ -59,7 +60,7 @@ export default function RootLayout({
           <main id="mainbody" className="pt-0 relative">
               {children}
           </main>
-          <footer className="w-full bg-(--footerColor) p-5 flex flex-col lg:flex-row">
+          {/* <footer className="w-full bg-(--footerColor) p-5 flex flex-col lg:flex-row">
             <div className="flex flex-col gap-y-4 w-full h-full p-5" style={{ color: "var(--footerTextColor)" }}>
               <h1 className="self-center lg:self-start border-none underline" style={{ color: "var(--footerTitle)" }}>
                 Let&apos;s Talk
@@ -82,7 +83,7 @@ export default function RootLayout({
 
               </div>
               <div className="flex flex-row gap-3">
-                {/* WhatsApp */}
+             
                 <a href="https://wa.me/254 775 014655?text=Hello%20Techis-N!" target="_blank" rel="noopener noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 32 32" fill="none">
                     <path
@@ -120,7 +121,7 @@ export default function RootLayout({
                     </defs>
                   </svg>
                 </a>
-                {/* Instagram */}
+                
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 48 48" fill="none">
                     <circle cx="24" cy="24" r="20" fill="#C13584" />
@@ -138,7 +139,7 @@ export default function RootLayout({
                     />
                   </svg>
                 </a>
-                {/* LinkedIn */}
+              
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -157,7 +158,191 @@ export default function RootLayout({
                 </a>
               </div>
             </div>
-          </footer>
+          </footer> */}
+
+          <footer className="w-full bg-black text-slate-100">
+      
+      {/* Main Footer Content */}
+      <div className="px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+            {/* Company Info */}
+            <div>
+              <h3 className="text-lg font-bold text-accent">Techis-N</h3>
+              <p className="mt-4 text-sm text-slate-400">
+                When technology meets intention, it transforms. We deliver powerful, customized tech solutions with
+                purpose.
+              </p>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h4 className="font-semibold text-white">Services</h4>
+              <ul className="mt-4 space-y-3">
+                <li>
+                  <Link href="#" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                    Software Solutions
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                    Automation Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                    Cloud Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                    AI Services
+                  </Link>
+                </li>
+                  <li>
+                  <Link href="#" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                    Data Analytics
+                  </Link>
+                </li>
+                 
+                  <li>
+                  <Link href="#" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                    QA Testing
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Company Links */}
+            <div>
+              <h4 className="font-semibold text-white">Company</h4>
+              <ul className="mt-4 space-y-3">
+                <li>
+                  <Link href="/#aboutSection" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#projects" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                    Portfolio
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="text-sm text-slate-400 hover:text-blue-400 transition-colors">
+                    Careers
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h4 className="font-semibold text-white">Contact</h4>
+              <ul className="mt-4 space-y-4">
+                <li className="flex gap-3">
+                  <Mail className="h-5 w-5 flex-shrink-0 text-accent" />
+                  <a
+                    href="mailto:techisn25@gmail.com"
+                    className="text-sm text-slate-400 hover:text-blue-400 transition-colors break-all"
+                  >
+                    techisn25@gmail.com
+                  </a>
+                </li>
+                <li className="flex gap-3">
+                  <Phone className="h-5 w-5 flex-shrink-0 text-accent" />
+                  <div className="text-sm text-slate-400">
+                    <div className="hover:text-blue-400 transition-colors">+254 111 700 990</div>
+                    <div className="hover:text-blue-400 transition-colors">+254 7111 531 39</div>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <MapPin className="h-5 w-5 flex-shrink-0 text-accent" />
+                  <span className="text-sm text-slate-400">Nairobi, Kenya</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Social Links */}
+          <div className="mt-12 border-t border-accent/30 pt-8">
+            <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+              <p className="text-sm text-slate-500">© 2026 Techis-N. All rights reserved.</p>
+              <div className="flex gap-6">
+                {/* WhatsApp */}
+                <a
+                  href="https://wa.me/254775014655?text=Hello%20Techis-N!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  className="text-slate-400 hover:text-green-400 transition-colors"
+                >
+                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 32 32" >
+                  <title>whatsapp</title>
+                  <path d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"></path>
+                  </svg>
+                  {/* <svg className="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.255.949c-1.238.503-2.347 1.229-3.263 2.145a9.847 9.847 0 00-2.144 3.265 9.836 9.836 0 00-.949 4.256c0 1.628.271 3.207.795 4.704l-1.239 4.027 4.124-1.215c1.476.711 3.121 1.086 4.791 1.086h.004c5.104 0 9.26-4.158 9.26-9.26 0-2.456-.944-4.771-2.662-6.504a9.052 9.052 0 00-6.504-2.668Z" />
+                  </svg> */}
+
+                  
+                </a>
+
+                {/* Instagram */}
+                <a
+                  href="https://instagram.com/techisn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="text-slate-400 hover:text-pink-400 transition-colors"
+                >
+                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.914 4.914 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.913 4.913 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" />
+                  </svg>
+                </a>
+
+                {/* LinkedIn */}
+                <a
+                  href="https://linkedin.com/company/techis-n"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="text-slate-400 hover:text-blue-500 transition-colors"
+                >
+                  <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Legal Links */}
+      <div className="border-t border-slate-800 bg-slate-900/50 px-4 py-6 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col items-center justify-center gap-4 text-center sm:flex-row sm:justify-between">
+            <div className="flex flex-wrap gap-6">
+              <Link href="#" className="text-xs text-slate-500 hover:text-slate-300 transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="#" className="text-xs text-slate-500 hover:text-slate-300 transition-colors">
+                Terms of Service
+              </Link>
+              <Link href="#" className="text-xs text-slate-500 hover:text-slate-300 transition-colors">
+                Cookie Policy
+              </Link>
+            </div>
+            <p className="text-xs text-slate-600">Built with purpose. Powered by techis-n.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
         
         </ThemeProvider>
       </body>
