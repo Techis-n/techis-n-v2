@@ -18,7 +18,7 @@ export function FounderCard({ name, role, description, image }: FounderCardProps
         visible: { opacity: 1, y: 0 },
       }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="relative w-72 h-[400px] max-w-[400px] aspect-[3/4] rounded-3xl overflow-hidden group cursor-pointer bg-slate-900 "
+      className="relative w-72 h-[400px] max-w-[400px] aspect-[3/4] rounded-3xl overflow-hidden group cursor-pointer bg-slate-300/30 "
     >
       {/* Background Image */}
       <div className="absolute items-center justify-center  inset-0 transition-opacity duration-500 group-hover:opacity-20">
@@ -38,7 +38,7 @@ export function FounderCard({ name, role, description, image }: FounderCardProps
       </div>
 
       {/* Hover Background (Grid & Gradient) */}
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-[rgb(23,184,166)]-900 via-[rgb(23,184,166)]-950 to-black">
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-[rgb(181, 194, 192)]-900 via-[rgb(94, 146, 138)]-950 to-slate-600">
         <div
           className="absolute inset-0 opacity-20"
           style={{
@@ -63,7 +63,7 @@ export function FounderCard({ name, role, description, image }: FounderCardProps
 
         {/* Description (Visible on Hover) */}
         <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 translate-y-4 group-hover:translate-y-0">
-          <p className="text-sm text-slate-300 leading-relaxed text-pretty">{description}</p>
+          <p className="text-sm text-slate-900 leading-relaxed text-pretty">{description}</p>
         </div>
       </div>
 

@@ -393,16 +393,17 @@ const Page = () => {
             <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-0" />
             <div className="fixed inset-0 flex w-screen items-center justify-center p-4 z-10">
               <DialogPanel
-                className="max-w-5xl space-y-4 rounded-lg p-12 relative z-20 shadow-2xl"
+                className="max-w-5xl space-y-4 rounded-xl p-12 relative z-20 shadow-2xl"
                 style={{
                   background: "var(--serviceDialog)",
                   borderColor: "var(--borderColorLight)",
                   borderStyle: "solid",
                   borderWidth: "1px",
+                  borderRadius: "10px"
                 }}
               >
                 {selectedService && (
-                  <div className="w-full h-full flex flex-col gap-y-5 text-white">
+                  <div className="w-full h-full flex flex-col gap-y-5 text-white  ">
                     <div
                       id="header"
                       className="w-full h-[200px] flex justify-center items-center z-10 bg-cover bg-no-repeat bg-center rounded-md shadow-lg"
@@ -427,7 +428,9 @@ const Page = () => {
                         {
                           background: "var(--buttons)",
                           "--hover-shadow": "var(--buttons)",
+                          borderRadius: "8px" 
                         } as React.CSSProperties
+                        
                       }
                       onMouseEnter={(e) => (e.currentTarget.style.background = "var(--buttonHover)")}
                       onMouseLeave={(e) => (e.currentTarget.style.background = "var(--buttons)")}
@@ -460,7 +463,12 @@ const Page = () => {
         <br />
 
         <div className="valuescontent grid lg:grid-cols-2 gap-3 py-3">
-          <div className="valuescontainer" ref={addToRefs}>
+          <div className="valuescontainer " ref={addToRefs} style={
+                {
+                  backgroundImage: `linear-gradient(to right, var(--serviceGradientStart), var(--serviceGradientMid), var(--serviceGradientEnd))`,
+                  "--service-hover": "var(--serviceHover)",
+                } as React.CSSProperties
+              }>
             <span id="content1">
               <div
                 className="w-10 h-10 rounded-full flex items-center justify-center shadow-md"
@@ -485,7 +493,12 @@ const Page = () => {
             </span>
           </div>
 
-          <div className="valuescontainer" ref={addToRefs}>
+          <div className="valuescontainer" ref={addToRefs} style={
+                {
+                  backgroundImage: `linear-gradient(to right, var(--serviceGradientEnd), var(--serviceGradientMid), var(--serviceGradientStart))`,
+                  "--service-hover": "var(--serviceHover)",
+                } as React.CSSProperties
+              }>
             <span id="content1">
               <div
                 className="w-10 h-10 rounded-full flex items-center justify-center shadow-md"
@@ -516,7 +529,12 @@ const Page = () => {
             </span>
           </div>
 
-          <div className="valuescontainer" ref={addToRefs}>
+          <div className="valuescontainer" ref={addToRefs} style={
+                {
+                  backgroundImage: `linear-gradient(to right, var(--serviceGradientStart), var(--serviceGradientMid), var(--serviceGradientEnd))`,
+                  "--service-hover": "var(--serviceHover)",
+                } as React.CSSProperties
+              }>
             <span id="content1">
               <div
                 className="w-10 h-10 rounded-full flex items-center justify-center shadow-md"
@@ -541,7 +559,12 @@ const Page = () => {
             </span>
           </div>
 
-          <div className="valuescontainer" ref={addToRefs}>
+          <div className="valuescontainer" ref={addToRefs}  style={
+                {
+                  backgroundImage: `linear-gradient(to right, var(--serviceGradientEnd), var(--serviceGradientMid), var(--serviceGradientStart))`,
+                  "--service-hover": "var(--serviceHover)",
+                } as React.CSSProperties
+              }>
             <span id="content1">
               <div
                 className="w-10 h-10 rounded-full flex items-center justify-center shadow-md"
@@ -620,13 +643,14 @@ const Page = () => {
             return (
               <div
                 key={item.name}
-                className="m-3 flex-col flex border p-1 rounded-lg shadow-md hover:shadow-lg transition"
+                className="cardRadius m-3 flex-col flex border p-1 rounded-lg shadow-md hover:shadow-lg transition"
                 style={{
                   borderColor: "var(--borderColor)",
                   background: "var(--projectCard)",
+                  borderRadius:'9px'
                 }}
               >
-                <div className="h-48 w-full flex items-center justify-center rounded-lg overflow-hidden">
+                <div className="h-48 w-full flex items-center justify-center rounded-lg overflow-hidden cardRadius">
   <img
     src={item.image}
     alt={item.name} // 
@@ -641,7 +665,7 @@ const Page = () => {
                   {" "}
                   {item.name}
                 </span>
-                <span className="mt-2 m-3 text-sm text-gray-400 block text-justify"> {item.description} </span>
+                <span className="mt-2 m-3 text-sm text-gray-500 block text-justify"> {item.description} </span>
               </div>
             )
           })}
@@ -731,7 +755,7 @@ const Page = () => {
                     style={{ backgroundImage: `url(${item.image})` }}
                   ></div>
                   <div className="">
-                    <p className="text-2xl font-bold text-gray-300"> {item.about}</p>
+                    <p className="text-2xl font-bold text-gray-600"> {item.about}</p>
                     <p id="Name" className="text-lg" style={{ color: "var(--textHighlights)" }}>
                       {" "}
                       {item.name}
@@ -739,7 +763,7 @@ const Page = () => {
                   </div>
                 </div>
                 <br />
-                <p className="text-gray-300">{item.description}</p>
+                <p className="text-gray-500">{item.description}</p>
               </div>
             </span>
           </div>
@@ -778,7 +802,7 @@ const Page = () => {
       
 
       {/* Founders Section */}
-      <div className="flex flex-col  p-5 gap-5 bg-(--background1)">
+      <div className="flex flex-col  p-5 gap-5 bg-(--background2)">
          <div className="max-w-7xl mx-auto">
         {/* Header Section */}
                 <motion.div
@@ -787,7 +811,7 @@ const Page = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16 space-y-4"
         >
-          <h2 className="text-4xl md:text-5xl font-serif italic text-blue-200">Meet Our leadership Team</h2>
+          <h2 className="text-4xl md:text-5xl font-serif italic text-blue-600">Meet Our leadership Team</h2>
           <p className="text-slate-400 text-lg">top people at  our organisation</p>
         </motion.div>
 

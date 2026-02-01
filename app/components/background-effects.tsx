@@ -97,5 +97,5 @@ export default function BackgroundEffects() {
     }
   }, [theme])
 
-  return <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none -z-10" />
+  return <canvas ref={canvasRef} className="fixed inset-0 bg-white pointer-events-none -z-10" />
 }

@@ -6,8 +6,10 @@
 
 /* DEEP OCEAN - Professional teal & aquamarine */
 :root {
-  --background: oklch(0.08 0 0);
-  --foreground: oklch(0.95 0 0);
+  /* --background: oklch(0.08 0 0); */
+  --background:oklch(90.286% 0.00544 198.102); 
+  --foreground:oklch(0% 0 0); 
+  /* --foreground: oklch(0.95 0 0); */
   --card: oklch(0.12 0.03 180);
   --card-foreground: oklch(0.95 0 0);
   --popover: oklch(0.08 0 0);
@@ -28,34 +30,45 @@
 
   --navbarColor: #0a0a0a;
   --background1: #0d0d0d;
-  --background2: #1a1a1a;
+  --background2:oklch(90.286% 0.00544 198.102); 
+  /* --background2: #1a1a1a; */
   --textHighlights: #14b8a6;
-  --altText: #e0e0e0;
+  /* --altText: #e0e0e0; */
+  --altText:oklch(0% 0 0); 
   --textDark: #5eaaa8;
   --patternHexagon: #0d9488;
   --serviceHover: rgba(20, 184, 166, 0.1);
-  --serviceDialog: #0e1a1a;
+  /* --serviceDialog: #0e1a1a; */
+   --serviceDialog: #d6fcfc;
   --buttons: #14b8a6;
   --buttonHover: #5eaaa8;
-  --projectCard: rgba(26, 26, 26, 0.85);
+  --projectCard: rgba(233, 238, 237, 0.85);
+   /* --projectCard: rgba(26, 26, 26, 0.85); */
   --footerColor: #0a0a0a;
   --slidingMenu: rgba(10, 10, 10, 0.98);
   --gradientPrimary: #5eaaa8;
   --gradientSecondary: #14b8a6;
   --gradientTertiary: #2dd4bf;
-  --serviceGradientStart: #0e1a1a;
+  /* --serviceGradientStart: #0e1a1a;
   --serviceGradientMid: #1e2a2a;
-  --serviceGradientEnd: #2e3a3a;
+  --serviceGradientEnd: #2e3a3a; */
+  --serviceGradientStart: #e3f0f0;
+  --serviceGradientMid: #e5ecec;
+  --serviceGradientEnd: #ffffff;
+
   --cardLight: #ccfbf1;
+  /* --cardDark: #3e5e5c; */
   --cardDark: #3e5e5c;
   --footerTitle: #14b8a6;
   --hexagonAlt: #2dd4bf;
   --borderColor: rgba(20, 184, 166, 0.2);
-  --borderColorLight: rgba(20, 184, 166, 0.35);
+  --borderColorLight: rgba(231, 233, 233, 0.35);
+  /* --borderColorLight: rgba(20, 184, 166, 0.35); */
   --footerLinkText: #5eaaa8;
   --techStackTitle: #0f766e;
   --techStackIconColor: #14b8a6;
-  --techStackTextColor: #ccfbf1;
+  /* --techStackTextColor: #ccfbf1; */
+   --techStackTextColor: #4b4d4c;
   --particleBackground: rgba(8, 25, 25, 0.05);
   --particleColor: 20, 184, 166;
   --lineColor: 94, 170, 168;
@@ -1165,6 +1178,10 @@
   to {
     transform: translateX(-100%);
   }
+}
+
+.cardRadius{
+  border-radius: 9px;
 }
 
 .animate-scroll {
