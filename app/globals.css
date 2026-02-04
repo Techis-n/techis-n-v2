@@ -27,10 +27,11 @@
   --border: oklch(0.15 0.03 180);
   --input: oklch(0.15 0.03 180);
   --ring: oklch(0.62 0.22 185);
+  --headerbackground:oklch(100% 0.00011 271.152);
 
   --navbarColor: #0a0a0a;
   --background1: #0d0d0d;
-  --background2:oklch(90.286% 0.00544 198.102); 
+  --background2:oklch(98.881% 0.00321 199.034); 
   /* --background2: #1a1a1a; */
   --textHighlights: #14b8a6;
   /* --altText: #e0e0e0; */
@@ -63,6 +64,7 @@
   --hexagonAlt: #2dd4bf;
   --borderColor: rgba(20, 184, 166, 0.2);
   --borderColorLight: rgba(231, 233, 233, 0.35);
+  /* --bordercoloring:rgba(247, 247, 247, 0.35); */
   /* --borderColorLight: rgba(20, 184, 166, 0.35); */
   --footerLinkText: #5eaaa8;
   --techStackTitle: #0f766e;
