@@ -35,7 +35,7 @@
   /* --background2: #1a1a1a; */
   --textHighlights: #14b8a6;
   /* --altText: #e0e0e0; */
-  --altText:oklch(0% 0 0); 
+  --altText:oklch(29.82% 0.00143 15.934); 
   --textDark: #5eaaa8;
   --patternHexagon: #0d9488;
   --serviceHover: rgba(20, 184, 166, 0.1);
@@ -1323,6 +1323,7 @@
   text-align: justify;
   line-height: 1.6;
   color: var(--altText);
+  
 }
 
 #svgcontent {

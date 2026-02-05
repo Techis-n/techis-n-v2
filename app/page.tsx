@@ -17,6 +17,7 @@ import { FaNodeJs } from "react-icons/fa6"
 import { FaPython,FaDocker,FaAws } from "react-icons/fa"
 import { useRouter } from "next/navigation"
 import BackgroundEffects from "./components/background-effects"
+import WhyChooseUs from "./components/why-choose-us"
 // import { TbBrand4Chan } from "react-icons/tb"; // hypothetical, if you have a custom icon
 import { MdOutlineGraphicEq } from "react-icons/md"; 
 
@@ -445,13 +446,15 @@ const Page = () => {
           </Dialog>
         )}
       </section>
+{/* why choose us section */}
+      <WhyChooseUs/>
 
       {/* About Section */}
       <section id="aboutSection" className="min-h-screen flex flex-col w-full relative scrollbar-hide scroll-mt-[12vh]">
         <span id="aboutentry" className="font-bold mt-10 text-[28px]" style={{ color: "var(--textDark)", fontFamily: "'Arial', sans-serif" }}>
           Committed to Client Satisfaction
         </span>
-        <span id="aboutcontent">
+        <span id="aboutcontent" className="text-lg">
           Our clients are at the core of everything we do; <br />
           we are dedicated to delivering exceptional solutions to meet their expectations, empower their success, <br />
           and ensure their happiness every step of the way.
