@@ -4,11 +4,13 @@ type Service = {
   image: string
   p1: string
   p2: string
+  icon:any
 }
 
 export const services: Service[] = [
   {
     id: "Software Solutions",
+    icon:"💻",
     logo: "/software-development-icon.jpg",
     image: "/software-development-workspace.png",
     p1: "We provide tailored software development services to meet your business needs. Whether you need custom web applications, mobile apps, or enterprise solutions, our team ensures user-friendly, scalable, and secure software to streamline your operations and drive growth.",
@@ -16,6 +18,7 @@ export const services: Service[] = [
   },
   {
   id: "Automation Services",
+  icon:"⚙️",
   logo: "/automation1.jpg",
   image: "/automation2.jpg",
   p1: "Streamline your business processes with our automation services. We design and implement intelligent automation solutions that increase efficiency, reduce errors, and save time across your operations.",
@@ -24,6 +27,7 @@ export const services: Service[] = [
 
   {
     id: "AI Solutions",
+    icon:"🤖",
     logo: "/artificial-intelligence-icon.png",
     image: "/ai-neural-network.png",
     p1: "Unlock the power of Artificial Intelligence with our cutting-edge solutions. From chatbots to predictive analytics and automation, we design AI systems to enhance efficiency, improve decision-making, and deliver a competitive edge for your business.",
@@ -31,6 +35,7 @@ export const services: Service[] = [
   },
   {
     id: "Cloud Services",
+    icon:"☁️",
     logo: "/cloud-computing-icon.png",
     image: "/cloud-infrastructure-network.jpg",
     p1: "Unlock the power of the cloud with scalable, secure, and cost-effective solutions tailored to your business needs.",
@@ -38,23 +43,20 @@ export const services: Service[] = [
   },
   {
     id: "Data Analytics",
+    icon:"📊",
     logo: "/data-analytics-icon.png",
     image: "/data-visualization-dashboard.png",
     p1: "Transform your data into actionable insights. Our data analytics services help you identify trends, optimize processes, and make informed decisions. We specialize in data visualization, predictive analytics, and business intelligence tools to maximize your performance.",
     p2: "We work closely with you to understand your data challenges and provide solutions tailored to your objectives. Whether it's building interactive dashboards, implementing advanced analytics models, or setting up real-time monitoring, our goal is to empower your team with the insights they need to drive success.",
   },
-  {
-    id: "Graphics Design",
-    logo: "/graphic-design-icon.png",
-    image: "/creative-design-workspace.jpg",
-    p1: "Bring your brand to life with visually stunning designs. From logos and branding materials to digital content and marketing assets, our graphic design team crafts creative solutions that resonate with your audience and elevate your brand identity.",
-    p2: "We blend creativity with strategy to ensure your designs reflect your brand values and communicate effectively. Whether you're starting from scratch or looking to refresh your visual presence, our team delivers captivating designs that stand out in today's competitive market.",
-  },
-  {
-    id: "Software Testing and QA",
-    logo: "/quality-assurance-icon.jpg",
-    image: "/software-testing-process.jpg",
-    p1: "Ensure your software works seamlessly with our comprehensive testing and quality assurance services. We offer functional, performance, and security testing to identify and resolve issues, delivering reliable and high-quality software to your users.",
-    p2: "Our testing process includes both manual and automated approaches to ensure your software is robust and user-friendly. We identify potential vulnerabilities, verify compliance with industry standards, and provide detailed reporting to keep you informed every step of the way, ensuring a flawless user experience.",
-  },
+ 
+  // {
+  //   id: "Software Testing and QA",
+  //   icon:"🔍",
+  //   logo: "/quality-assurance-icon.jpg",
+  //   image: "/software-testing-process.jpg",
+  //   p1: "Ensure your software works seamlessly with our comprehensive testing and quality assurance services. We offer functional, performance, and security testing to identify and resolve issues, delivering reliable and high-quality software to your users.",
+  //   p2: "Our testing process includes both manual and automated approaches to ensure your software is robust and user-friendly. We identify potential vulnerabilities, verify compliance with industry standards, and provide detailed reporting to keep you informed every step of the way, ensuring a flawless user experience.",
+  // },
 ]
+// { icon: "⛓️", label: "Blockchain" }

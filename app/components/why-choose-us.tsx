@@ -3,28 +3,28 @@ import Image from "next/image"
 export default function WhyChooseUs() {
   return (
     <section
-      className="py-20 md:py-28 lg:py-32"
-      style={{ backgroundColor: "oklch(98.881% 0.00321 199.034)" }}
+      className="py-20 md:py-28 lg:py-32 bg-(--background2)"
+    //   style={{ backgroundColor: "oklch(98.881% 0.00321 199.034)" }}
     >
       <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Text Content */}
           <div className="space-y-8">
             {/* Eyebrow */}
-            <span
-              className="inline-block text-xs font-semibold tracking-[0.2em] uppercase"
-              style={{ color: "oklch(0.62 0.22 185)" }}
+            <p
+              className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-(--primary)"
+              // style={{ color: "oklch(0.62 0.22 185)" }}
             >
               End-to-End Technology Partners
-            </span>
+            </p>
 
             {/* Main Heading */}
-            <h1 className="text-4xl md:text-5xl lg:text-[2.5rem] font-bold leading-[1.1] tracking-tight text-black text-balance">
+            <h1 className="text-4xl md:text-5xl lg:text-[2.5rem] font-bold leading-[1.1] tracking-tight text-(--altText) text-balance">
               Technology Built Around Your Vision
             </h1>
 
             {/* Supporting Statement */}
-            <p className="text-lg md:text-lg text-black/70 leading-relaxed max-w-xl">
+            <p className="text-lg md:text-lg text-(--altText) leading-relaxed max-w-xl">
               We listen, advise, and integrate seamlessly with your goals, combining strategic
               thinking with strong technical execution to deliver efficient, future-ready systems.
             </p>
@@ -65,11 +65,11 @@ export default function WhyChooseUs() {
                         </g>
                         </svg>
                   {/* </div> */}
-                  <h2 className="text-xl md:text-2xl font-semibold text-black">
+                  <h2 className="text-xl md:text-2xl font-semibold text-(--accent)">
                     Collaborative Partnership
                   </h2>
                 </div>
-                <p className="text-base md:text-lg text-black/60 leading-relaxed pl-5">
+                <p className="text-base md:text-lg text-(--secondary-foreground) leading-relaxed pl-5">
                   We believe the best solutions are built together. By partnering with you from day
                   one, we gain a deep understanding of not just what you need, but why you need it —
                   enabling us to co-create impactful digital products.
@@ -98,11 +98,11 @@ export default function WhyChooseUs() {
 		                />
                     </g>
                     </svg>
-                  <h2 className="text-xl md:text-2xl font-semibold text-black">
+                  <h2 className="text-xl md:text-2xl font-semibold text-(--accent)">
                     Tailor-Made & Scalable Technology
                   </h2>
                 </div>
-                <p className="text-base md:text-lg text-black/60 leading-relaxed pl-5">
+                <p className="text-base md:text-lg text-(--secondary-foreground) leading-relaxed pl-5">
                   No off-the-shelf systems. Every solution is custom-built to fit your operations
                   today while remaining flexible and scalable for tomorrow.
                 </p>

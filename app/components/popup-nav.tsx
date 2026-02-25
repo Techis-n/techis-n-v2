@@ -86,7 +86,7 @@ export const PopupNav = () => {
   }, []);
 
   return (
-    <div className="w-full h-full flex justify-center p-5 text-white bg-[var(--headerbackground)] border-b border-slate-100">
+    <div className="w-full h-full flex justify-center p-5 text-white  border-b ">
       <div className="w-full h-full flex flex-row  items-center">
         {/* <h1 className="ml-5 w-fit h-full flex items-center justify-center text-4xl font-serif whitespace-nowrap bg-linear-to-r from-(--gradientPrimary) via-(--gradientSecondary) to-(--gradientTertiary) bg-clip-text text-transparent font-extrabold tracking-wide drop-shadow-lg">
           Techis-N

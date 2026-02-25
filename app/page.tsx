@@ -18,6 +18,7 @@ import { FaPython,FaDocker,FaAws } from "react-icons/fa"
 import { useRouter } from "next/navigation"
 import BackgroundEffects from "./components/background-effects"
 import WhyChooseUs from "./components/why-choose-us"
+import { HowWeWork } from "./components/how-we-work"
 // import { TbBrand4Chan } from "react-icons/tb"; // hypothetical, if you have a custom icon
 import { MdOutlineGraphicEq } from "react-icons/md"; 
 
@@ -280,17 +281,51 @@ const Page = () => {
       >
         <div className="lg:sticky lg:top-[12%] w-full">
           <div className="text-center p-5 flex flex-col gap-y-5 lg:h-[88vh]">
-            <span className="text-2xl font-extrabold" style={{ color: "var(--textDark)" }}>
-              Why choose us
+            
+            <h2 className="text-2xl font-bold leading-tight lg:text-3xl  text-(--accent) text-balance" >
+            End-to-End Technology Solutions
+            </h2>
+            <span className="text-justify leading-relaxed text-base text-(--secondary-foreground) md:text-lg">
+             We design, build, and optimize systems that grow with your business — from cloud infrastructure to intelligent automation.
             </span>
-            <span className="text-justify">
-              At Techis-N, we believe in empowering our clients by partnering closely with them from the very start of a
-              project to its successful completion. This helps us to understand not just what our clients want, but why
-              they need it—allowing us to co-create solutions that directly reflect their vision and solve real
-              challenges. We also listen, advise, and integrate seamlessly with your goals to develop smart, scalable,
-              and tailor-made digital strategies that enhance efficiency, and keep you ahead in a fast moving digital
-              world.
-            </span>
+
+             {/* Services List with Icons */}
+            <div className="flex flex-col gap-2 py-4">
+              {services.map((service, index) => (
+                <div key={index} className="flex items-center gap-4 group">
+                  <div 
+                    className="flex items-center justify-center w-8 h-8 rounded-lg transition-all duration-300 group-hover:scale-110"
+                    // style={{  opacity: 0.15, borderRadius:"8px"  }}
+                  >
+                    <span className="text-xl">{service.icon}</span>
+                  </div>
+                  <span 
+                    className="font-semibold text-sm lg:text-base transition-colors duration-300 group-hover:opacity-100"
+                    // style={{ color: "var(--textDark)" }}
+                  >
+                    {service.id}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA Button */}
+            <button
+              className="px-8 py-3 font-semibold rounded-xl  transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-white text-center w-full lg:w-auto"
+              style={{ background: "var(--textHighlights)", borderRadius:"8px" }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.opacity = "0.9"
+                e.currentTarget.style.boxShadow = "0 10px 25px rgba(20, 184, 166, 0.3)"
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.opacity = "1"
+                e.currentTarget.style.boxShadow = "none"
+              }}
+              onClick={contactpage}
+            >
+              Book a Free Consultation
+            </button>
+       
 
             <div className="absolute w-full h-full hidden lg:flex items-end -z-20 p-4">
               <div className="w-full flex flex-row-reverse -top-8 -right-8">
@@ -325,7 +360,7 @@ const Page = () => {
           {services.map((oneService) => (
             <div
               key={oneService.id}
-              className="eachservice hideService w-full flex flex-col shrink-0 gap-y-4 p-5 relative text-white overflow-x-hidden before:absolute before:inset-0 before:-translate-x-full before:transition-transform before:duration-0 hover:before:translate-x-0 hover:before:transition-transform hover:before:duration-500 hover:before:ease-in-out rounded-md shadow-lg hover:shadow-2xl"
+              className="eachservice hideService md:w-[99%] flex flex-col shrink-0 gap-y-4 p-4 relative text-white overflow-x-hidden before:absolute before:inset-0 before:-translate-x-full before:transition-transform before:duration-0 hover:before:translate-x-0 hover:before:transition-transform hover:before:duration-500 hover:before:ease-in-out rounded-md shadow-lg hover:shadow-2xl md:ml-6"
               style={
                 {
                   backgroundImage: `linear-gradient(to right, var(--serviceGradientStart), var(--serviceGradientMid), var(--serviceGradientEnd))`,
@@ -735,7 +770,7 @@ const Page = () => {
         </div>
       </section>
       
-      {/* Testimonials Section */}
+      {/* Testimonials Section
       <section className="w-full flex flex-col gap-8 px-5 py-12 text-white overflow-hidden relative">
         <h2 className="w-full text-center text-3xl font-bold p-5" style={{ color: "var(--textDark)" }}>
           Voices of Trust: What Our Customers Say
@@ -800,7 +835,10 @@ const Page = () => {
         </div>
       
       
-      </section>
+      </section> */}
+
+      {/* how we work section */}
+      <HowWeWork/>
 
       
 
