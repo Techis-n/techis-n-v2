@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
             </h1>
 
             {/* Supporting Statement */}
-            <p className="text-lg md:text-lg text-(--altText) leading-relaxed max-w-xl">
+            <p className="text-lg md:text-md text-(--altText) leading-relaxed max-w-xl">
               We listen, advise, and integrate seamlessly with your goals, combining strategic
               thinking with strong technical execution to deliver efficient, future-ready systems.
             </p>
@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
                     Collaborative Partnership
                   </h2>
                 </div>
-                <p className="text-base md:text-lg text-(--secondary-foreground) leading-relaxed pl-5">
+                <p className="text-base md:text-md text-(--secondary-foreground) leading-relaxed pl-5">
                   We believe the best solutions are built together. By partnering with you from day
                   one, we gain a deep understanding of not just what you need, but why you need it —
                   enabling us to co-create impactful digital products.
@@ -102,7 +102,7 @@ export default function WhyChooseUs() {
                     Tailor-Made & Scalable Technology
                   </h2>
                 </div>
-                <p className="text-base md:text-lg text-(--secondary-foreground) leading-relaxed pl-5">
+                <p className="text-base md:text-md text-(--secondary-foreground) leading-relaxed pl-5">
                   No off-the-shelf systems. Every solution is custom-built to fit your operations
                   today while remaining flexible and scalable for tomorrow.
                 </p>
@@ -139,8 +139,8 @@ export default function WhyChooseUs() {
                 style={{ backgroundColor: "oklch(0.62 0.22 185)" }}
               >
                 <div className="text-center p-6">
-                  <span className="text-5xl md:text-6xl font-bold text-white">10+</span>
-                  <p className="text-sm text-white/90 mt-2 font-medium">Years of Excellence</p>
+                  <span className="text-5xl md:text-4xl font-bold text-white">Trusted</span>
+                  <p className="text-sm text-white/90 mt-2 font-medium">Technology Partners</p>
                 </div>
               </div>
             </div>
