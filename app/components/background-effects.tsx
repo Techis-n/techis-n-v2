@@ -97,6 +97,6 @@ export default function BackgroundEffects() {
     }
   }, [theme])
 
-  return <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none -z-10 md:w-full h-full md:max-w-full max-h-full overflow-hidden"
+  return <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none -z-10 sm:overflow-x-hidden md:w-full h-full md:max-w-full max-h-full overflow-hidden"
   style={{display:'block'}} />
 }

@@ -131,8 +131,8 @@ export const PopupNav = () => {
         <div className="w-fit lg:w-full h-full flex items-center justify-center lg:justify-end mt-2 lg:mt-0">
           <div className="gap-5 justify-center items-center flex w-fit h-full relative top-0 flex-row">
             {/* Theme Switcher */}
-            <div className="relative group">
-              {/* Button */}
+            {/* <div className="relative group">
+              
               <button
                 onClick={() => setShowThemeMenu((prev) => !prev)}
                 className={`p-2 rounded-lg hover:bg-white/10 transition-all duration-200 border border-transparent hover:border-white/20 ${showThemeMenu && `bg-white/10 border-white/20`}`}
@@ -150,20 +150,18 @@ export const PopupNav = () => {
                 </svg>
               </button>
 
-              {/* Tooltip */}
               <div className="absolute top-full left-1/2 transform -translate-x-1/2 bg-black/90 text-white text-xs py-1 px-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
                 Change theme
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1 w-2 h-2 bg-black/90 rotate-45"></div>
               </div>
 
-              {/* Dropdown */}
+              
               {showThemeMenu && (
                 <div className="theme-switcher-container absolute top-full -left-full bg-card border border-border rounded-lg shadow-lg p-3 z-50 backdrop-blur-sm min-w-[200px]">
                   <div className="text-sm font-medium text-card-foreground mb-2 px-2">
                     Select Theme
                   </div>
-
-                  {/* FLEX WRAP FIX */}
+=
                   <div className="grid grid-cols-3 gap-3">
                     {themes.map((t) => (
                       <button
@@ -182,7 +180,7 @@ export const PopupNav = () => {
                   </div>
                 </div>
               )}
-            </div>
+            </div> */}
             <button
               className="hidden md:flex md:hover:underline  border-none transition hover:scale-110 cursor-pointer"
               style={{ color: "var(--textHighlights)", "--hover-color": "var(--textDark)" } as React.CSSProperties}
@@ -200,6 +198,7 @@ export const PopupNav = () => {
             </button>
           </div>
         </div>
+        
       </div>
 
       {showMenu && (

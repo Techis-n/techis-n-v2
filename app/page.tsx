@@ -209,12 +209,12 @@ const Page = () => {
   const getColor = (i: number) => (i % 2 === 0 ? "var(--textHighlights)" : "var(--buttonHover)");
 
   return (
-    <main>
+    <main className="overflow-x-hidden md-overflow-x-auto">
       <BackgroundEffects />
 
       {/* Hero Section */}
       <section id="homePage" 
-      className="w-full h-[70vh] lg:h-[88vh] relative scroll-mt-[12vh] text-(--altText)  bg-cover bg-center flex items-center"
+      className="w-full h-[85vh] lg:h-[88vh] relative scroll-mt-[12vh] text-(--altText)  bg-cover bg-center flex items-center"
       style={{backgroundImage:"url(/heropic.jpg)"}}>
         <div className="absolute inset-0 bg-black/30 md:bg-black/20"></div>
         <div className="h-full flex flex-col lg:flex-row">
@@ -222,7 +222,7 @@ const Page = () => {
             <h1 className="text-lg lg:text-5xl font-bold ml-5 text-(--hero-primary)">
               Drive Innovation with Expert Technology Solutions
             </h1>
-            <span className="text-md font-serif text-center ">
+            <span className="text-md font-serif text-center mt-10 md:mt-0">
               Expertly delivering solutions by{" "}
               <span className="font-bold" style={{ color: getColor(index) }}>
                 <Typewriter
@@ -712,7 +712,7 @@ const Page = () => {
           })}
         </div>
 
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <button
             className="text-white text-lg rounded-full px-8 py-3 shadow-md hover:shadow-lg transition duration-300 m-10"
             style={{ background: "var(--buttons)" }}
@@ -721,7 +721,7 @@ const Page = () => {
           >
             More Projects
           </button>
-        </div>
+        </div> */}
 
         <div className="absolute top-0 w-full h-full flex items-end -z-20">
           <div className="w-full flex flex-row-reverse justify-center relative -bottom-[100px] right-[150px]">
