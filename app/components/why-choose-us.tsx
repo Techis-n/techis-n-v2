@@ -116,7 +116,7 @@ export default function WhyChooseUs() {
               {/* Main Large Image */}
               <div className="col-span-2 relative aspect-[16/10] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/collaboration.jpg"
+                  src="/collaboration003.jpg"
                   alt="Team collaboration in modern workspace"
                   fill
                   className="object-cover"
@@ -129,7 +129,7 @@ export default function WhyChooseUs() {
                   src="/technology.jpg"
                   alt="Custom technology solutions"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center"
                 />
               </div>
 

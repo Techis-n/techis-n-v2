@@ -213,13 +213,16 @@ const Page = () => {
       <BackgroundEffects />
 
       {/* Hero Section */}
-      <section id="homePage" className="w-full h-[70vh] lg:h-[85vh] relative scroll-mt-[12vh] text-(--altText)">
+      <section id="homePage" 
+      className="w-full h-[70vh] lg:h-[88vh] relative scroll-mt-[12vh] text-(--altText)  bg-cover bg-center flex items-center"
+      style={{backgroundImage:"url(/heropic.jpg)"}}>
+        <div className="absolute inset-0 bg-black/20"></div>
         <div className="h-full flex flex-col lg:flex-row">
-          <div className="flex flex-col gap-y-5 items-center justify-center w-full lg:w-2/3 h-full px-2">
-            <h1 className="text-lg lg:text-5xl font-bold text-center">
+          <div className="flex flex-col gap-y-2 items-center justify-center w-full lg:w-2/3 h-full px-2">
+            <h1 className="text-lg lg:text-5xl font-bold ml-5 text-(--hero-primary)">
               Drive Innovation with Expert Technology Solutions
             </h1>
-            <span className="text-md font-serif text-center">
+            <span className="text-md font-serif text-center ">
               Expertly delivering solutions by{" "}
               <span className="font-bold" style={{ color: getColor(index) }}>
                 <Typewriter
@@ -235,9 +238,9 @@ const Page = () => {
               </span>
             </span>
           </div>
-          <div className="lg:w-1/3 lg:h-full flex justify-end items-end p-5">
+          <div className="lg:w-1/3 lg:h-full flex justify-end items-end ">
             <div className="flex flex-col h-32 font-mono text-xs font-bold" style={{ color: "var(--altText)" }}>
-              <span className="flex gap-x-2">
+              <span className="flex gap-x-2 pt-20   text-(--support-text)">
                 <b>-</b>
                 <span className="flex flex-col gap-y-1">
                   <span>Great tech doesn't just solve problems</span>

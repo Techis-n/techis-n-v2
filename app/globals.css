@@ -28,6 +28,8 @@
   --input: oklch(0.15 0.03 180);
   --ring: oklch(0.62 0.22 185);
   --headerbackground:oklch(100% 0.00011 271.152);
+  --hero-primary: oklch(100% 0.00011 271.152);
+  --support-text:oklch(79.893% 0.1402 184.365);
 
   --navbarColor: #0a0a0a;
   --background1: #0d0d0d;
