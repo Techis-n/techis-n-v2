@@ -216,7 +216,7 @@ const Page = () => {
       <section id="homePage" 
       className="w-full h-[70vh] lg:h-[88vh] relative scroll-mt-[12vh] text-(--altText)  bg-cover bg-center flex items-center"
       style={{backgroundImage:"url(/heropic.jpg)"}}>
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-black/30 md:bg-black/20"></div>
         <div className="h-full flex flex-col lg:flex-row">
           <div className="flex flex-col gap-y-2 items-center justify-center w-full lg:w-2/3 h-full px-2">
             <h1 className="text-lg lg:text-5xl font-bold ml-5 text-(--hero-primary)">
