@@ -209,7 +209,7 @@ const Page = () => {
   const getColor = (i: number) => (i % 2 === 0 ? "var(--textHighlights)" : "var(--buttonHover)");
 
   return (
-    <main className="overflow-x-hidden md-overflow-x-auto">
+    <main className="overflow-x-hidden md:overflow-x-visible">
       <BackgroundEffects />
 
       {/* Hero Section */}
